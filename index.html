@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYU7554</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <!-- Profile Image -->
+            <div class="profile-image">
+                <!-- TODO: Update profile image path -->
+                <img src="images/avt.jpg" alt="Profile Image" id="profile-img">
+            </div>
+
+            <!-- Profile Name -->
+            <div class="profile-name">
+                <h2>CYU7554</h2>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://web.facebook.com/nhattdanghocbai" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nhatt1608/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@yuuyuu1608" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/ItsmeYuuYuu" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <!-- Main Menu View -->
+                <div id="main-menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">Bài tập <span class="arrow">▲</span></button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-grid">
+                                <div class="dropdown-column">
+                                    <a href="#" data-week="1">Bài tập tuần 1</a>
+                                    <a href="#" data-week="2">Bài tập tuần 2</a>
+                                    <a href="#" data-week="3">Bài tập tuần 3</a>
+                                    <a href="#" data-week="4">Bài tập tuần 4</a>
+                                    <a href="#" data-week="5">Bài tập tuần 5</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <a href="#" data-week="6">Bài tập tuần 6</a>
+                                    <a href="#" data-week="7">Bài tập tuần 7</a>
+                                    <a href="#" data-week="8">Bài tập tuần 8</a>
+                                    <a href="#" data-week="9">Bài tập tuần 9</a>
+                                    <a href="#" data-week="10">Bài tập tuần 10</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Đồ án <span class="arrow">▼</span></button>
+                        <div class="dropdown-content">
+                            <!-- TODO: Update project link -->
+                            <a href="Cuongsac/index.html">Đồ án Frontend</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assignment Files View (Initially Hidden) -->
+                <div id="assignment-files" style="display: none;">
+                    <div class="files-header">
+                        <button id="back-button" class="back-btn"><i class="fas fa-arrow-left"></i> Quay lại</button>
+                        <h3 id="week-title">Bài tập tuần X</h3>
+                    </div>
+                    <div class="files-grid">
+                        <!-- Files will be dynamically added here -->
+                        <!-- Example structure:
+                        <a href="#" class="file-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>lab1_bai1.html</span>
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 CYU7554. All rights reserved.</p>
+            <p>Nguyễn Minh Nhật - MSSV: DH52201153 - Lớp: D22_TH12 - Nhóm: 26 - Ca học: Thứ 2_Ca 4</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 

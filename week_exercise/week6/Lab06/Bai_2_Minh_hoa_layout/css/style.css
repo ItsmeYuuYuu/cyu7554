@@ -1,0 +1,128 @@
+/* Base styles */
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.wrapper > * {
+	padding: 10px;
+}
+
+/* Header styles */
+.header-flex-2 {
+	background: tomato;
+	width: 100%;
+}
+
+/* Footer styles */
+.footer-flex-2 {
+	background: lightgreen;
+	width: 100%;
+}
+
+/* Main content styles */
+.main {
+	text-align: left;
+	background: deepskyblue;
+	min-height: 400px;
+}
+
+/* Aside styles */
+.aside {
+	min-height: 400px;
+}
+
+.aside-1 {
+	background: gold;
+}
+
+.aside-2 {
+	background: hotpink;
+}
+
+/* Mobile layout - Single column */
+@media screen and (max-width: 599px) {
+	.wrapper {
+		flex-direction: column;
+		margin: 0;
+		width: 100%;
+	}
+
+	.header-flex-2 { 
+		order: 1;
+	}
+	.main { 
+		order: 2;
+		min-height: 200px;
+	}
+	.aside-1 { 
+		order: 3;
+		min-height: 150px;
+	}
+	.aside-2 { 
+		order: 4;
+		min-height: 150px;
+	}
+	.footer-flex-2 { 
+		order: 5;
+	}
+}
+
+/* Medium layout (125% - 200% zoom) - Main on top, asides below side by side */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+	.wrapper {
+		flex-flow: row wrap;
+	}
+	
+	.header-flex-2 {
+		order: 1;
+	}
+	
+	.main {
+		width: 100%;
+		order: 2;
+	}
+	
+	.aside-1, .aside-2 {
+		flex: 1;
+		order: 3;
+	}
+	
+	.footer-flex-2 {
+		order: 4;
+	}
+}
+
+/* Desktop layout - Three columns */
+@media screen and (min-width: 1201px) {
+	.wrapper {
+		flex-flow: row wrap;
+	}
+	
+	.header-flex-2 {
+		order: 1;
+	}
+	
+	.aside-1 {
+		flex: 1;
+		order: 2;
+	}
+	
+	.main {
+		flex: 1;
+		order: 3;
+	}
+	
+	.aside-2 {
+		flex: 1;
+		order: 4;
+	}
+	
+	.footer-flex-2 {
+		order: 5;
+	}
+}

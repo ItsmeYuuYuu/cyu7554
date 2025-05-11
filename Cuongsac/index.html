@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuồng Sạc</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Cuongsac/assets/css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            Tư vấn sạc dự phòng, củ sạc<b>: 0356180093</b> • Địa chỉ<b>: 180 Cao Lỗ, Phường 4 - Quận 8 - TPHCM</b>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Nav Header -->
+            <div class="mobile-nav-header">
+                <button class="mobile-menu-toggle" title="Menu" aria-label="Mở menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="logo mobile-logo">
+                    <a href="/Cuongsac/">
+                        <img src="/Cuongsac/assets/images/logo.png" alt="Cuồng Sạc Logo">
+                    </a>
+                </div>
+                
+                <div class="mobile-actions">
+                    <a href="/Cuongsac/pages/login.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="/Cuongsac/pages/cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Desktop Logo -->
+            <div class="logo desktop-logo">
+                <a href="/Cuongsac/">
+                    <img src="/Cuongsac/assets/images/logo.png" alt="Cuồng Sạc Logo">
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button type="submit" title="Tìm kiếm" aria-label="Tìm kiếm">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="actions">
+                <a href="/Cuongsac/pages/login.html" class="action-item">
+                    <i class="fas fa-user"></i>
+                    <span>Đăng nhập</span>
+                </a>
+                <a href="/Cuongsac/pages/login.html" class="action-item">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Đăng ký</span>
+                </a>
+                <a href="/Cuongsac/pages/cart.html" class="action-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Giỏ hàng</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-bars"></i>
+                    <span>Danh mục sản phẩm</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Cuongsac/pages/categories/power-banks/">SẠC DỰ PHÒNG</a></li>
+                    <li><a href="/Cuongsac/pages/categories/chargers/">CỦ SẠC</a></li>
+                    <li><a href="/Cuongsac/pages/categories/fast-charging/">SẠC NHANH</a></li>
+                    <li><a href="/Cuongsac/pages/categories/wireless/">SẠC KHÔNG DÂY</a></li>
+                    <li><a href="/Cuongsac/pages/categories/laptop-chargers/">SẠC CHO LAPTOP</a></li>
+                    <li><a href="/Cuongsac/pages/categories/budget/">SẠC GIÁ RẺ</a></li>
+                    <li><a href="/Cuongsac/pages/categories/combo/">COMBO SẠC</a></li>
+                    <li><a href="/Cuongsac/pages/categories/accessories/">LINH KIỆN SẠC</a></li>
+                    <li><a href="#">XEM THÊM. . .</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Chất lượng đảm bảo</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-truck"></i>
+                    <span>Vận chuyển siêu tốc</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Tư vấn sản phẩm: 0356180093</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Slider -->
+    <div class="banner-slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="/Cuongsac/assets/images/banner1.png" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="/Cuongsac/assets/images/banner2.png" alt="Banner 2">
+            </div>
+        </div>
+        
+        <!-- Slider Navigation Arrows -->
+        <button class="slider-nav prev" title="Trước" aria-label="Trước">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-nav next" title="Sau" aria-label="Sau">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Slider Indicators -->
+        <div class="slider-indicators">
+            <button class="indicator active" data-slide="0" title="Slide 1" aria-label="Slide 1"></button>
+            <button class="indicator" data-slide="1" title="Slide 2" aria-label="Slide 2"></button>
+        </div>
+    </div>
+
+    <!-- Advertisement Section (4 boxes) -->
+    <section class="advertisement-section">
+        <div class="container">
+            <div class="ad-grid">
+                <div class="ad-box">
+                    <img src="/Cuongsac/assets/images/tuvan.png" alt="Tư Vấn Sản Phẩm">
+                </div>
+                
+                <div class="ad-box">
+                    <img src="/Cuongsac/assets/images/sackhongday.png" alt="Sạc Không Dây">
+                </div>
+                
+                <div class="ad-box">
+                    <img src="/Cuongsac/assets/images/sacdungluongcao.png" alt="Sạc Dự Phòng">
+                </div>
+                
+                <div class="ad-box">
+                    <img src="/Cuongsac/assets/images/cusacnhanh.png" alt="Củ Sạc Nhanh">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion Section (Khuyến mãi Shock Nhất) -->
+    <section class="promotion-section">
+        <div class="container">
+            <div class="promotion-container">
+                <div class="promotion-header">
+                    <h2><span style="font-size: 1.3em; color: #ff3300;">🔥</span> KHUYẾN MẠI SHOCK NHẤT <span style="font-size: 1.3em; color: #ff3300;">🔥</span></h2>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-id="1">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Anker_Powercore_20000_PowerIQ_2.0_before.png" alt="Sạc Dự Phòng Anker">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=1">Sạc Dự Phòng Anker 535 PowerCore 20000 30W</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">700.000₫</span>
+                                    <span class="discount-badge">-60%</span>
+                                </div>
+                                <span class="original-price">1.760.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card" data-id="2">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/XIAOMI_120W_HYPERCHARGE.png" alt="Củ Sạc Xiaomi 120W">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=2">Củ Sạc Nhanh Xiaomi 120W HyperCharge</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">420.000₫</span>
+                                    <span class="discount-badge">-67%</span>
+                                </div>
+                                <span class="original-price">1.260.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card" data-id="3">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Sac_khong_day_Samsung_15W_Qi_Wireless.png" alt="Sạc Không Dây Samsung">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=3">Sạc Không Dây Samsung 15W Qi Wireless</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">845.000₫</span>
+                                    <span class="discount-badge">-50%</span>
+                                </div>
+                                <span class="original-price">1.490.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card" data-id="4">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Sac_Du_Phong_BELKIN_BOOSTCHARGE.png" alt="Sạc Dự Phòng BELKIN">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=4">Sạc Dự Phòng BELKIN BoostCharge 15.000mAh</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">645.000₫</span>
+                                    <span class="discount-badge">-50%</span>
+                                </div>
+                                <span class="original-price">2.000.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card" data-id="5">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Cu_sac_nhanh_100W_GaN_Nexode.png" alt="Củ Sạc Nhanh Ugreen">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=5">Củ Sạc Nhanh Ugreen 100W GaN Nexode 3C-1A</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">950.000₫</span>
+                                    <span class="discount-badge">-37%</span>
+                                </div>
+                                <span class="original-price">1.500.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-all">
+                    <a href="#" class="view-all-link">
+                        Xem tất cả KHUYẾN MẠI SHOCK NHẤT
+                        <span class="circle-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Selling Products Section -->
+    <section class="top-selling-section">
+        <div class="container">
+            <div class="top-selling-container">
+                <div class="section-header">
+                    <h2>TOP SẢN PHẨM BÁN CHẠY</h2>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-id="6">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Anker_Nano_10000mAh.png" alt="Sạc Dự Phòng Anker Nano">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=6">Sạc Dự Phòng Anker Nano 10000mAh - 30W</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">790.000₫</span>
+                                    <span class="discount-badge">-42%</span>
+                                </div>
+                                <span class="original-price">1.350.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card" data-id="7">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/cuktech_p-series_25000mah.png" alt="Sạc Dự Phòng CukTech P-Series">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=7">Sạc Dự Phòng CukTech P-Series 25000mAh - 210W</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">1.650.000₫</span>
+                                    <span class="discount-badge">-25%</span>
+                                </div>
+                                <span class="original-price">2.200.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card" data-id="8">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Ugreen_Nexode_12000mAh_100W.png" alt="Sạc Dự Phòng Ugreen Nexode">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=8">Sạc Dự Phòng Ugreen Nexode 12000mAh - 100W</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">960.000₫</span>
+                                    <span class="discount-badge">-20%</span>
+                                </div>
+                                <span class="original-price">1.200.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card" data-id="9">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Anker_Prime_100W_GaN_Wall_Charger.png" alt="Củ Sạc Nhanh Anker Prime">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=9">Củ Sạc Nhanh Anker Prime 100W GaN Wall Charger</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">1.350.000₫</span>
+                                    <span class="discount-badge">-25%</span>
+                                </div>
+                                <span class="original-price">1.800.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card" data-id="10">
+                        <div class="product-image">
+                            <img src="/Cuongsac/assets/images/Ugreen_Nexode_RG_65W_USB-C_GaN_Charger.png" alt="Củ Sạc Nhanh Ugreen Nexode">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=10">Củ Sạc Nhanh Ugreen Nexode RG 65W USB-C GaN Charger</a></h3>
+                            <div class="product-price">
+                                <div class="price-row">
+                                    <span class="current-price">975.000₫</span>
+                                    <span class="discount-badge">-25%</span>
+                                </div>
+                                <span class="original-price">1.300.000₫</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- High Performance Power Banks Section -->
+    <section class="high-performance-section">
+        <div class="container">
+            <h2 class="section-title">SẠC DỰ PHÒNG HIỆU NĂNG CAO</h2>
+            
+            <div class="products-layout">
+                <!-- Banner Image -->
+                <div class="banner-image">
+                    <img src="/Cuongsac/assets/images/banner3.png" alt="Sạc Dự Phòng">
+                </div>
+                
+                <!-- Products Grid -->
+                <div class="products-container">
+                    <!-- Top Row Products -->
+                    <div class="products-row">
+                        <!-- Product 1 -->
+                        <div class="product-card" data-id="11">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/ANKER_PRIME_POWER_BANK_20000MAH_200W.png" alt="Sạc Dự Phòng Anker Prime">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=11">Sạc Dự Phòng Anker Prime Power Bank 20000mAh - 200W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">2.000.000₫</span>
+                                        <span class="discount-badge">-20%</span>
+                                    </div>
+                                    <span class="original-price">2.500.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card" data-id="12">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/ANKER_737_POWER_BANK_24000MAH_140W.png" alt="Sạc Dự Phòng Aker 737">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=12">Sạc Dự Phòng Anker 737 Power Bank 24000mAh - 140W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">2.240.000₫</span>
+                                        <span class="discount-badge">-20%</span>
+                                    </div>
+                                    <span class="original-price">2.800.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card" data-id="13">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/UGREEN_NEXODE_20000MAH_145W.png" alt="Sạc Dự Phòng Ugreen Nexode">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=13">Sạc Dự Phòng Ugreen Nexode 20000mAh-145W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">1.350.000₫</span>
+                                        <span class="discount-badge">-25%</span>
+                                    </div>
+                                    <span class="original-price">1.800.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card" data-id="14">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/SAMSUNG_BATTERY_PACK_20000MAH_45W.png" alt="Sạc Dự Phòng Samsung">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=14">Sạc Dự Phòng Samsung Battery Pack 20000mAh - 45W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">1.920.000₫</span>
+                                        <span class="discount-badge">-20%</span>
+                                    </div>
+                                    <span class="original-price">2.400.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card" data-id="15">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/RAVPOWER_PD_PIONEER_30000MAH_90W.png" alt="Sạc Dự Phòng Ravpower">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=20">Sạc Dự Phòng Ravpower PD Pioneer 30000MAH - 90W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">1.840.000₫</span>
+                                        <span class="discount-badge">-20%</span>
+                                    </div>
+                                    <span class="original-price">2.300.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row Products -->
+                    <div class="products-row">
+                        <!-- Product 6 -->
+                        <div class="product-card" data-id="16">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/CUKTECH_PB200P_20000MAH_150W.png" alt="Sạc Dự Phòng Cuktech">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=19">Sạc Dự Phòng Cuktech PB200P 20000mAh-150W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">1.760.000₫</span>
+                                        <span class="discount-badge">-20%</span>
+                                    </div>
+                                    <span class="original-price">2.200.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="product-card" data-id="17">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/AUKEY_PB-Y36_SPRINT_20000MAH_65W.png" alt="Sạc Dự Phòng Aukey">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=15">Sạc Dự Phòng Aukey PB-Y36 Sprint 20000mAh - 65W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">1.280.000₫</span>
+                                        <span class="discount-badge">-20%</span>
+                                    </div>
+                                    <span class="original-price">1.600.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="product-card" data-id="18">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/ENERGIZER_ULTIMATE_20000MAH_60W.png" alt="Sạc Dự Phòng Energizer">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=16">Sạc Dự Phòng Energizer Ultimate 20000mAh 60W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">1.350.000₫</span>
+                                        <span class="discount-badge">-25%</span>
+                                    </div>
+                                    <span class="original-price">1.800.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="product-card" data-id="19">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/PISEN_PRO_D301_20000MAH_65W.png" alt="Sạc Dự Phòng Pisen Pro">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=17">Sạc Dự Phòng Pisen Pro D301 20000mAh 65W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">1.200.000₫</span>
+                                        <span class="discount-badge">-20%</span>
+                                    </div>
+                                    <span class="original-price">1.500.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 10 -->
+                        <div class="product-card" data-id="20">
+                            <div class="product-image">
+                                <img src="/Cuongsac/assets/images/UGREEN_300W_48000mAh.png" alt="Sạc Dự Phòng Ugreen">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title"><a href="/Cuongsac/pages/products/product-detail.html?id=18">Sạc Dự Phòng Ugreen 48000mAh - 300W</a></h3>
+                                <div class="product-price">
+                                    <div class="price-row">
+                                        <span class="current-price">3.800.000₫</span>
+                                        <span class="discount-badge">-14%</span>
+                                    </div>
+                                    <span class="original-price">4.420.000₫</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <span class="cart-icon-circle"><i class="fas fa-shopping-cart"></i></span>
+                                    <span class="cart-btn-text">THÊM VÀO GIỎ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Đăng ký nhận bản tin</h3>
+                    <p>Để nhận các thông tin mới từ Cuồng Sạc cũng như các chương trình khuyến mãi</p>
+                </div>
+                <div class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="✉ Vui lòng nhập email của bạn...">
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Về Cuồng Sạc <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <p>Trang thương mại (không) chính thức của Hội Cuồng Sạc - Sạc Thủ. Luôn tìm kiếm những sản phẩm vì Sạc Thủ.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Thông tin liên hệ <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> 180 Cao Lỗ - Phường 4 - Quận 8 - TPHCM</li>
+                                <li><i class="fas fa-phone"></i> 0356180093</li>
+                                <li><i class="fas fa-envelope"></i> mnhattheacre@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Tài khoản ngân hàng <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="/Cuongsac/tai-khoan-ngan-hang">Tài khoản ngân hàng</a></li>
+                                <li><a href="/Cuongsac/tim-kiem">Tìm kiếm</a></li>
+                                <li><a href="/Cuongsac/phuong-thuc-thanh-toan">Phương thức thanh toán</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Chính sách <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="/Cuongsac/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                                <li><a href="/Cuongsac/quy-dinh-bao-hanh">Quy định bảo hành</a></li>
+                                <li><a href="/Cuongsac/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
+                                <li><a href="/Cuongsac/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
+                                <li><a href="/Cuongsac/chinh-sach-van-chuyen">Chính sách vận chuyển và kiểm hàng</a></li>
+                                <li><a href="/Cuongsac/phan-dinh-trach-nhiem">Phân định trách nhiệm của tổ chức cung ứng dịch vụ logistics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Student Info Bar -->
+    <div class="student-info">
+        <div class="container">
+            <p>Họ tên: Nguyễn Minh Nhật - MSSV: DH52201153 - Lớp: D22_TH12 - Nhóm: 26 - Ca học: Thứ 2_Ca 4</p>
+        </div>
+    </div>
+
+    <!-- Cart Popup -->
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <h2>GIỎ HÀNG</h2>
+            <div class="cart-popup-items">
+                <p class="empty-cart">Hiện chưa có sản phẩm</p>
+            </div>
+            <div class="cart-popup-footer">
+                <div class="cart-popup-total">
+                    <span>TỔNG TIỀN:</span>
+                    <span class="total-price">0₫</span>
+                </div>
+                <a href="/Cuongsac/pages/cart.html" class="view-cart-button">XEM GIỎ HÀNG</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="/Cuongsac/assets/js/script.js"></script>
+    <script src="/Cuongsac/assets/js/cart.js"></script>
+</body>
+</html>

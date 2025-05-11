@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .calculator {
+            max-width: 500px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin: 10px 0;
+        }
+        button {
+            margin-right: 5px;
+            padding: 5px 10px;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div>
+            <input type="text" id="num1" placeholder="Nhập số thứ nhất">
+        </div>
+        <div>
+            <input type="text" id="num2" placeholder="Nhập số thứ hai">
+        </div>
+        <div class="buttons">
+            <button id="add">+</button>
+            <button id="subtract">-</button>
+            <button id="multiply">×</button>
+            <button id="divide">/</button>
+        </div>
+        <div class="result">
+            Kết quả: <span id="result"></span>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            function validateInputs() {
+                var num1 = $('#num1').val().trim();
+                var num2 = $('#num2').val().trim();
+                
+                if (num1 === '' || num2 === '') {
+                    $('#result').text('Vui lòng nhập đầy đủ hai số');
+                    return false;
+                }
+                
+                if (isNaN(num1) || isNaN(num2)) {
+                    $('#result').text('Vui lòng nhập số hợp lệ');
+                    return false;
+                }
+                
+                return true;
+            }
+
+            $('#add').click(function() {
+                if (validateInputs()) {
+                    var num1 = parseInt($('#num1').val());
+                    var num2 = parseInt($('#num2').val());
+                    $('#result').text(num1 + num2);
+                }
+            });
+
+            $('#subtract').click(function() {
+                if (validateInputs()) {
+                    var num1 = parseInt($('#num1').val());
+                    var num2 = parseInt($('#num2').val());
+                    $('#result').text(num1 - num2);
+                }
+            });
+
+            $('#multiply').click(function() {
+                if (validateInputs()) {
+                    var num1 = parseInt($('#num1').val());
+                    var num2 = parseInt($('#num2').val());
+                    $('#result').text(num1 * num2);
+                }
+            });
+
+            $('#divide').click(function() {
+                if (validateInputs()) {
+                    var num1 = parseInt($('#num1').val());
+                    var num2 = parseInt($('#num2').val());
+                    
+                    if (num2 === 0) {
+                        $('#result').text('Không thể chia cho số 0');
+                        return;
+                    }
+                    
+                    $('#result').text(num1 / num2);
+                }
+            });
+
+            // Chỉ cho phép nhập số và các phím điều hướng
+            $('input[type="text"]').on('keypress', function(e) {
+                var charCode = (e.which) ? e.which : e.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode !== 45) {
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script>
+</body>
+</html> 

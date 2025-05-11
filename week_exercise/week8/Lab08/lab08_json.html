@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .info-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #555;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .value {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Information</h1>
+        <div class="info-container" id="userInfo">
+            <!-- Information will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Define the user information as a JSON object
+        const userJson = {
+            "name": "Nguyễn Văn A",
+            "age": 30,
+            "email": "nguyenvana@stu.edu.vn",
+            "address": "Ho Chi Minh, NY 10001"
+        };
+
+        // Function to display user information
+        function displayUserInfo(userData) {
+            const userInfoContainer = document.getElementById('userInfo');
+            const fields = ['name', 'age', 'email', 'address'];
+            const labels = {
+                name: 'Name',
+                age: 'Age',
+                email: 'Email',
+                address: 'Address'
+            };
+
+            // Create HTML content for each field
+            const htmlContent = fields.map(field => `
+                <div class="info-item">
+                    <span class="label">${labels[field]}:</span>
+                    <span class="value">${userData[field]}</span>
+                </div>
+            `).join('');
+
+            // Insert the HTML content into the container
+            userInfoContainer.innerHTML = htmlContent;
+        }
+
+        // Call the function to display user information when the page loads
+        window.onload = function() {
+            displayUserInfo(userJson);
+        };
+    </script>
+</body>
+</html> 

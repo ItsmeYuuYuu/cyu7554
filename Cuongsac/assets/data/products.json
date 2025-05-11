@@ -1,0 +1,397 @@
+[
+    {
+        "id": "1",
+        "name": "Sạc Dự Phòng Anker 535 PowerCore 20000 30W",
+        "brand": "Anker",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 700000,
+        "originalPrice": 1760000,
+        "discountPercent": 60,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Anker_Powercore_20000_PowerIQ_2.0_before.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "30W",
+            "inputPort": "1 x Type-C PD",
+            "outputPort": "1 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery 3.0, PowerIQ 3.0"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul style=\"list-style-position: inside; padding-left: 0;\"><li>Dung lượng pin lớn 20.000mAh, sạc được nhiều lần cho các thiết bị</li><li>Công nghệ PowerIQ 3.0 và Power Delivery cho tốc độ sạc nhanh</li><li>Công suất sạc 30W, phù hợp với nhiều loại thiết bị</li><li>Thiết kế nhỏ gọn, vỏ nhựa cao cấp chống trầy</li><li>An toàn với nhiều cơ chế bảo vệ</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Anker 535 PowerCore 20000mAh 30W là sản phẩm cao cấp từ thương hiệu Anker, được trang bị công nghệ sạc nhanh PowerIQ 3.0 và Power Delivery. Với dung lượng pin 20.000mAh, thiết bị có thể sạc đầy iPhone 13 khoảng 4.5 lần, Galaxy S21 khoảng 4 lần. Công suất sạc 30W cho phép sạc nhanh cho smartphone, tablet và cả laptop.</p>"
+    },
+    {
+        "id": "2",
+        "name": "Củ Sạc Nhanh Xiaomi 120W HyperCharge",
+        "brand": "Xiaomi",
+        "category": "Củ Sạc",
+        "categorySlug": "chargers",
+        "currentPrice": 420000,
+        "originalPrice": 1260000,
+        "discountPercent": 67,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/XIAOMI_120W_HYPERCHARGE.png",
+        "specifications": {
+            "power": "120W",
+            "inputPort": "AC 100-240V",
+            "outputPort": "1 x Type-C PD, 1 x USB-A",
+            "chargingTech": "HyperCharge, Power Delivery, Quick Charge 4+"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul style=\"list-style-position: inside; padding-left: 0;\"><li>Công suất sạc siêu cao 120W cho tốc độ sạc cực nhanh</li><li>Công nghệ HyperCharge độc quyền của Xiaomi</li><li>Tương thích với nhiều chuẩn sạc nhanh phổ biến</li><li>Thiết kế nhỏ gọn với chip GaN tiên tiến</li><li>Nhiều cơ chế bảo vệ an toàn</li></ul><h3>Thông tin chi tiết:</h3><p>Củ sạc Xiaomi 120W HyperCharge là sản phẩm cao cấp với công suất sạc siêu cao. Với công nghệ HyperCharge, củ sạc có thể sạc đầy smartphone từ 0-100% chỉ trong khoảng 30 phút. Sản phẩm tương thích với hầu hết các thiết bị trên thị trường và đặc biệt phù hợp với các dòng điện thoại Xiaomi hỗ trợ sạc siêu nhanh.</p>"
+    },
+    {
+        "id": "3",
+        "name": "Sạc Không Dây Samsung 15W Qi Wireless",
+        "brand": "Samsung",
+        "category": "Sạc Không Dây",
+        "categorySlug": "wireless",
+        "currentPrice": 845000,
+        "originalPrice": 1490000,
+        "discountPercent": 50,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Sac_khong_day_Samsung_15W_Qi_Wireless.png",
+        "specifications": {
+            "power": "15W",
+            "inputPort": "Type-C",
+            "outputPort": "Qi Wireless",
+            "chargingTech": "Fast Wireless Charging, Qi"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công nghệ sạc không dây chuẩn Qi</li><li>Công suất sạc 15W cho thiết bị Samsung</li><li>Tương thích với nhiều thiết bị khác nhau</li><li>Thiết kế mỏng, gọn, sang trọng</li><li>Đèn LED báo trạng thái sạc</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc không dây Samsung 15W Qi Wireless là giải pháp sạc hiện đại và tiện lợi. Với công nghệ sạc không dây chuẩn Qi, đế sạc này tương thích với hầu hết các thiết bị hỗ trợ sạc không dây hiện nay. Công suất sạc 15W đảm bảo tốc độ sạc nhanh cho các thiết bị Samsung Galaxy mới nhất.</p>"
+    },
+    {
+        "id": "4",
+        "name": "Sạc Dự Phòng BELKIN BoostCharge 15.000mAh",
+        "brand": "BELKIN",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 645000,
+        "originalPrice": 2000000,
+        "discountPercent": 50,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Sac_Du_Phong_BELKIN_BOOSTCHARGE.png",
+        "specifications": {
+            "capacity": "15000 mAh",
+            "power": "20W",
+            "inputPort": "Type-C",
+            "outputPort": "1 x Type-C, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Dung lượng 15.000mAh đủ để sạc nhiều lần cho các thiết bị</li><li>Công nghệ sạc nhanh Power Delivery</li><li>Thiết kế nhỏ gọn, bền bỉ với chất lượng từ thương hiệu BELKIN</li><li>Nhiều cổng sạc đa dạng</li><li>Hệ thống bảo vệ an toàn</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng BELKIN BoostCharge 15.000mAh là sản phẩm đến từ thương hiệu phụ kiện nổi tiếng của Mỹ. Với dung lượng 15.000mAh, pin có thể sạc đầy điện thoại thông minh từ 3-4 lần, đảm bảo thiết bị của bạn luôn có đủ năng lượng cho cả ngày dài.</p>"
+    },
+    {
+        "id": "5",
+        "name": "Củ Sạc Nhanh Ugreen 100W GaN Nexode 3C-1A",
+        "brand": "Ugreen",
+        "category": "Củ Sạc",
+        "categorySlug": "chargers",
+        "currentPrice": 950000,
+        "originalPrice": 1500000,
+        "discountPercent": 37,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Cu_sac_nhanh_100W_GaN_Nexode.png",
+        "specifications": {
+            "power": "100W",
+            "inputPort": "AC 100-240V",
+            "outputPort": "3 x Type-C, 1 x USB-A",
+            "chargingTech": "GaN, Power Delivery, QC3.0, SCP, AFC"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công nghệ GaN tiên tiến giúp sạc nhanh và hiệu quả</li><li>Công suất tổng lên đến 100W</li><li>4 cổng xuất (3 USB-C và 1 USB-A)</li><li>Hỗ trợ nhiều chuẩn sạc nhanh khác nhau</li><li>Kích thước nhỏ gọn hơn củ sạc thông thường</li></ul><h3>Thông tin chi tiết:</h3><p>Củ sạc Ugreen Nexode 100W với công nghệ GaN (Gallium Nitride) cho khả năng sạc cực nhanh, hiệu suất cao và kích thước nhỏ gọn. Với 4 cổng xuất, bạn có thể sạc đồng thời nhiều thiết bị như laptop, điện thoại, máy tính bảng. Đây là lựa chọn lý tưởng cho người thường xuyên di chuyển và cần sạc nhiều thiết bị cùng lúc.</p>"
+    },
+    {
+        "id": "6",
+        "name": "Sạc Dự Phòng Anker Nano 10000mAh - 30W",
+        "brand": "Anker",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 790000,
+        "originalPrice": 1350000,
+        "discountPercent": 42,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Anker_Nano_10000mAh.png",
+        "specifications": {
+            "capacity": "10000 mAh",
+            "power": "30W",
+            "inputPort": "Type-C",
+            "outputPort": "1 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, PowerIQ"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Dung lượng 10.000mAh trong kích thước nhỏ gọn</li><li>Công nghệ PowerIQ và Power Delivery cho tốc độ sạc nhanh</li><li>Công suất sạc 30W, phù hợp với cả smartphone và thiết bị lớn hơn</li><li>Thiết kế siêu mỏng và nhẹ</li><li>Dòng dây Anker Nano mới nhất</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Anker Nano 10000mAh thuộc dòng sản phẩm cao cấp mới của Anker với kích thước siêu nhỏ gọn. Mặc dù nhỏ nhưng với công suất 30W, pin này có thể sạc nhanh cho cả điện thoại và MacBook Air. Với thiết kế mỏng nhẹ, đây là lựa chọn hoàn hảo cho những chuyến đi.</p>"
+    },
+    {
+        "id": "7",
+        "name": "Sạc Dự Phòng CukTech P-Series 25000mAh - 210W",
+        "brand": "CukTech",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1650000,
+        "originalPrice": 2200000,
+        "discountPercent": 25,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/cuktech_p-series_25000mah.png",
+        "specifications": {
+            "capacity": "25000 mAh",
+            "power": "210W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge, VOOC, SCP"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Dung lượng cực cao 25000mAh</li><li>Công suất sạc đạt tới 210W</li><li>Có thể sạc được laptop gaming và các thiết bị công suất lớn</li><li>Màn hình LCD hiển thị trạng thái</li><li>Hỗ trợ nhiều giao thức sạc nhanh</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng CukTech P-Series 25000mAh là sản phẩm cao cấp với công suất sạc siêu cao lên đến 210W, đủ để sạc cho laptop gaming, MacBook Pro và các thiết bị công suất lớn khác. Với dung lượng 25000mAh, sạc dự phòng này có thể sạc đầy nhiều lần cho điện thoại, máy tính bảng và laptop.</p>"
+    },
+    {
+        "id": "8",
+        "name": "Sạc Dự Phòng Ugreen Nexode 12000mAh - 100W",
+        "brand": "Ugreen",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 960000,
+        "originalPrice": 1200000,
+        "discountPercent": 20,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Ugreen_Nexode_12000mAh_100W.png",
+        "specifications": {
+            "capacity": "12000 mAh",
+            "power": "100W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge, SCP, FCP"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công nghệ GaN giúp giảm kích thước và tăng hiệu suất</li><li>Công suất sạc cao 100W</li><li>Màn hình LED hiển thị phần trăm pin</li><li>Khả năng sạc nhiều thiết bị cùng lúc</li><li>Thiết kế nhỏ gọn, bền bỉ</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Ugreen Nexode 12000mAh là sản phẩm thuộc dòng Nexode cao cấp của Ugreen, tích hợp công nghệ GaN tiên tiến. Với công suất sạc lên đến 100W, sạc dự phòng này có thể sạc nhanh cho cả MacBook Pro 16 inch và các thiết bị công suất lớn khác.</p>"
+    },
+    {
+        "id": "9",
+        "name": "Củ Sạc Nhanh Anker Prime 100W GaN Wall Charger",
+        "brand": "Anker",
+        "category": "Củ Sạc",
+        "categorySlug": "chargers",
+        "currentPrice": 1350000,
+        "originalPrice": 1800000,
+        "discountPercent": 25,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Anker_Prime_100W_GaN_Wall_Charger.png",
+        "specifications": {
+            "power": "100W",
+            "inputPort": "AC 100-240V",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "GaN, Power Delivery, PowerIQ"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công nghệ GaN II thế hệ mới</li><li>Công suất tổng lên đến 100W</li><li>Thiết kế nhỏ gọn, sang trọng trong dòng Prime</li><li>Khả năng sạc 3 thiết bị cùng lúc</li><li>Tích hợp các công nghệ bảo vệ an toàn</li></ul><h3>Thông tin chi tiết:</h3><p>Củ sạc Anker Prime 100W GaN là sản phẩm thuộc dòng Prime cao cấp của Anker. Với công nghệ GaN II thế hệ mới, củ sạc có kích thước nhỏ gọn hơn 30% so với củ sạc thông thường cùng công suất. Công suất 100W cho phép sạc nhanh laptop, tablet và smartphone cùng lúc.</p>"
+    },
+    {
+        "id": "10",
+        "name": "Củ Sạc Nhanh Ugreen Nexode RG 65W USB-C GaN Charger",
+        "brand": "Ugreen",
+        "category": "Củ Sạc",
+        "categorySlug": "chargers",
+        "currentPrice": 975000,
+        "originalPrice": 1300000,
+        "discountPercent": 25,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/Ugreen_Nexode_RG_65W_USB-C_GaN_Charger.png",
+        "specifications": {
+            "power": "65W",
+            "inputPort": "AC 100-240V",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "GaN, Power Delivery, QC3.0, SCP, AFC"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công nghệ GaN tiên tiến giúp giảm kích thước và tăng hiệu suất</li><li>Công suất 65W đủ sạc cho hầu hết laptop</li><li>3 cổng sạc đa dạng cho nhiều thiết bị</li><li>Thiết kế đẹp mắt với đèn RGB</li><li>Nhiều lớp bảo vệ an toàn</li></ul><h3>Thông tin chi tiết:</h3><p>Củ sạc Ugreen Nexode RG 65W là dòng sạc cao cấp của Ugreen với điểm nhấn là đèn RGB đẹp mắt. Sử dụng công nghệ GaN tiên tiến giúp củ sạc nhỏ gọn hơn 40% so với củ sạc thông thường. Với công suất 65W, củ sạc này phù hợp cho cả MacBook Pro, Surface và các laptop mỏng nhẹ khác.</p>"
+    },
+    {
+        "id": "11",
+        "name": "Sạc Dự Phòng Anker Prime Power Bank 20000mAh - 200W",
+        "brand": "Anker",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 2000000,
+        "originalPrice": 2500000,
+        "discountPercent": 20,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/ANKER_PRIME_POWER_BANK_20000MAH_200W.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "200W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, PowerIQ, Quick Charge"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công suất siêu cao 200W cho nhiều thiết bị cùng lúc</li><li>Màn hình LCD hiển thị chi tiết</li><li>Công nghệ sạc PowerIQ 4.0 thông minh</li><li>Thiết kế cao cấp, vỏ kim loại bền bỉ</li><li>Đạt chuẩn sạc an toàn quốc tế</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Anker Prime Power Bank 20000mAh là sản phẩm cao cấp nhất trong dòng sạc dự phòng của Anker, với công suất đạt tới 200W, cho phép sạc đồng thời laptop, tablet và smartphone với tốc độ tối đa. Màn hình LCD hiển thị chi tiết về dung lượng, thời gian sạc còn lại và các thông số khác.</p>"
+    },
+    {
+        "id": "12",
+        "name": "Sạc Dự Phòng Aker 737 Power Bank 24000mAh - 140W",
+        "brand": "Anker",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 2240000,
+        "originalPrice": 2800000,
+        "discountPercent": 20,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/ANKER_737_POWER_BANK_24000MAH_140W.png",
+        "specifications": {
+            "capacity": "24000 mAh",
+            "power": "140W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, PowerIQ"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Dung lượng lớn 24000mAh</li><li>Công suất sạc cao 140W</li><li>Màn hình LED hiển thị thông tin</li><li>Chức năng sạc thông minh ActiveShield 2.0</li><li>Khả năng sạc nhanh nhiều thiết bị cùng lúc</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Anker 737 Power Bank có dung lượng 24000mAh, đủ để sạc MacBook Pro 16 inch từ 0 đến 50% chỉ trong 40 phút. Với công suất 140W, sạc dự phòng này có thể sạc nhanh cho cả laptop, tablet và smartphone cùng lúc mà không bị giảm tốc độ.</p>"
+    },
+    {
+        "id": "13",
+        "name": "Sạc Dự Phòng Ugreen Nexode 20000mAh-145W",
+        "brand": "Ugreen",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1350000,
+        "originalPrice": 1800000,
+        "discountPercent": 25,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/UGREEN_NEXODE_20000MAH_145W.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "145W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge, SCP, FCP"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công suất sạc siêu cao 145W</li><li>Công nghệ GaN thế hệ mới nhất</li><li>Màn hình LED hiển thị tình trạng pin</li><li>Khả năng sạc nhanh cho laptop gaming</li><li>Hỗ trợ nhiều công nghệ sạc nhanh</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Ugreen Nexode 20000mAh 145W là sản phẩm cao cấp nhất trong dòng Nexode của Ugreen. Với công suất sạc lên đến 145W, sạc dự phòng này có thể sạc nhanh cho cả laptop gaming và các thiết bị công suất lớn. Thời gian sạc nhanh hơn đáng kể so với các sạc dự phòng thông thường.</p>"
+    },
+    {
+        "id": "14",
+        "name": "Sạc Dự Phòng Samsung Battery Pack 20000mAh - 45W",
+        "brand": "Samsung",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1920000,
+        "originalPrice": 2400000,
+        "discountPercent": 20,
+        "inStock": false,
+        "image": "/Cuongsac/assets/images/SAMSUNG_BATTERY_PACK_20000MAH_45W.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "45W",
+            "inputPort": "Type-C",
+            "outputPort": "1 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Super Fast Charging 2.0"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Thiết kế cao cấp đặc trưng Samsung</li><li>Công suất sạc 45W hỗ trợ Super Fast Charging</li><li>Màn hình LED hiển thị phần trăm pin còn lại</li><li>Tương thích tối ưu với các thiết bị Galaxy</li><li>Vỏ kim loại cao cấp, bền bỉ</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Samsung Battery Pack 20000mAh là sản phẩm chính hãng từ Samsung với công nghệ Super Fast Charging 2.0. Với công suất 45W, sạc dự phòng này có thể sạc nhanh cho Galaxy S và Note series, cũng như các thiết bị khác hỗ trợ Power Delivery. Thiết kế mỏng, nhẹ và sang trọng giúp dễ dàng mang theo.</p>"
+    },
+    {
+        "id": "15",
+        "name": "Sạc Dự Phòng Aukey PB-Y36 Sprint 20000mAh - 65W",
+        "brand": "Aukey",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1280000,
+        "originalPrice": 1600000,
+        "discountPercent": 20,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/AUKEY_PB-Y36_SPRINT_20000MAH_65W.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "65W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge 3.0"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Dung lượng lớn 20000mAh, sạc được nhiều thiết bị</li><li>Công suất cao 65W, sạc nhanh cho laptop và smartphone</li><li>Màn hình LED hiển thị phần trăm pin còn lại</li><li>Công nghệ Dynamic Detect tự điều chỉnh công suất</li><li>Thiết kế nhỏ gọn, vừa vặn trong lòng bàn tay</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Aukey PB-Y36 Sprint 20000mAh là giải pháp sạc di động cao cấp với công suất 65W. Sản phẩm có thể sạc nhanh cho MacBook Pro, các dòng laptop mỏng nhẹ, iPad Pro và smartphone. Công nghệ Dynamic Detect tự động điều chỉnh công suất phù hợp với từng thiết bị khi sạc đồng thời nhiều thiết bị.</p>"
+    },
+    {
+        "id": "16",
+        "name": "Sạc Dự Phòng Energizer Ultimate 20000mAh 60W",
+        "brand": "Energizer",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1350000,
+        "originalPrice": 1800000,
+        "discountPercent": 25,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/ENERGIZER_ULTIMATE_20000MAH_60W.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "60W",
+            "inputPort": "Type-C",
+            "outputPort": "1 x Type-C PD, 2 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge 4.0"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Thương hiệu Energizer nổi tiếng toàn cầu</li><li>Công suất 60W cho phép sạc nhanh nhiều thiết bị</li><li>Pin Li-Po chất lượng cao, an toàn</li><li>Ba cổng ra để sạc đồng thời nhiều thiết bị</li><li>Thiết kế hiện đại, sang trọng với vỏ kim loại</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Energizer Ultimate 20000mAh là sản phẩm cao cấp từ thương hiệu pin hàng đầu thế giới. Với công suất 60W qua cổng Type-C Power Delivery, sạc dự phòng này có thể sạc nhanh các dòng MacBook Air, Surface và nhiều loại laptop mỏng nhẹ khác. Ngoài ra còn có 2 cổng USB-A hỗ trợ Quick Charge 4.0 để sạc nhanh điện thoại và máy tính bảng.</p>"
+    },
+    {
+        "id": "17",
+        "name": "Sạc Dự Phòng Pisen Pro D301 20000mAh 65W",
+        "brand": "Pisen",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1200000,
+        "originalPrice": 1500000,
+        "discountPercent": 20,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/PISEN_PRO_D301_20000MAH_65W.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "65W",
+            "inputPort": "Type-C",
+            "outputPort": "1 x Type-C PD, 2 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge 4.0"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công suất sạc cao 65W, đủ để sạc laptop</li><li>Màn hình LCD hiển thị chi tiết thông số sạc</li><li>Pin Li-Po chất lượng cao từ nhà sản xuất hàng đầu Trung Quốc</li><li>Tích hợp nhiều công nghệ bảo vệ pin</li><li>Thiết kế bền bỉ với vỏ nhựa ABS chống tác động</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Pisen Pro D301 20000mAh là sản phẩm cao cấp với công suất 65W từ thương hiệu Pisen nổi tiếng. Với công nghệ Power Delivery 3.0 và Quick Charge 4.0, sạc dự phòng này có thể sạc nhanh cho laptop, smartphone và máy tính bảng. Màn hình LCD hiển thị chi tiết công suất, dòng điện và thời gian sạc còn lại.</p>"
+    },
+    {
+        "id": "18",
+        "name": "Sạc Dự Phòng Ugreen 48000mAh - 300W",
+        "brand": "Ugreen",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 3800000,
+        "originalPrice": 4420000,
+        "discountPercent": 14,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/UGREEN_300W_48000mAh.png",
+        "specifications": {
+            "capacity": "48000 mAh",
+            "power": "300W",
+            "inputPort": "Type-C",
+            "outputPort": "3 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge, SCP, FCP"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul style=\"list-style-position: inside; padding-left: 0;\"><li>Dung lượng siêu lớn 48000mAh</li><li>Công suất cực cao lên đến 300W</li><li>Có thể sạc cho laptop gaming và MacBook Pro 16\"</li><li>Màn hình LED hiển thị thông tin chi tiết</li><li>Tích hợp nhiều lớp bảo vệ pin</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Ugreen 48000mAh - 300W là sản phẩm cao cấp nhất của Ugreen với dung lượng khổng lồ và công suất siêu cao. Với công suất 300W, sạc dự phòng này có thể sạc cho mọi thiết bị từ smartphone, máy tính bảng đến laptop gaming và thậm chí các thiết bị điện nhỏ. Dung lượng 48000mAh đảm bảo bạn có thể sạc đầy điện thoại hơn 10 lần và laptop khoảng 2-3 lần.</p>"
+    },
+    {
+        "id": "19",
+        "name": "Sạc Dự Phòng Cuktech PB200P 20000mAh-150W",
+        "brand": "CukTech",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1760000,
+        "originalPrice": 2200000,
+        "discountPercent": 20,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/CUKTECH_PB200P_20000MAH_150W.png",
+        "specifications": {
+            "capacity": "20000 mAh",
+            "power": "150W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge, SCP"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul><li>Công suất sạc 150W</li><li>Dung lượng 20000mAh, sạc được nhiều lần cho điện thoại</li><li>Màn hình LED hiển thị thông số chi tiết</li><li>Công nghệ sạc nhanh Power Delivery và Quick Charge</li><li>Thiết kế nhỏ gọn với vỏ kim loại</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Cuktech PB200P 20000mAh với công suất 150W là sản phẩm cao cấp phù hợp với những người dùng cần sạc nhiều thiết bị công suất cao cùng lúc. Với công suất lớn, sạc dự phòng này có thể sạc đầy laptop gaming chỉ trong khoảng 1.5 giờ. Màn hình LED hiển thị chi tiết thông số sạc giúp bạn dễ dàng theo dõi quá trình sạc.</p>"
+    },
+    {
+        "id": "20",
+        "name": "Sạc Dự Phòng Ravpower PD Pioneer 30000MAH - 90W",
+        "brand": "Ravpower",
+        "category": "Sạc Dự Phòng",
+        "categorySlug": "power-banks",
+        "currentPrice": 1840000,
+        "originalPrice": 2300000,
+        "discountPercent": 20,
+        "inStock": true,
+        "image": "/Cuongsac/assets/images/RAVPOWER_PD_PIONEER_30000MAH_90W.png",
+        "specifications": {
+            "capacity": "30000 mAh",
+            "power": "90W",
+            "inputPort": "Type-C",
+            "outputPort": "2 x Type-C PD, 1 x USB-A",
+            "chargingTech": "Power Delivery, Quick Charge, iSmart"
+        },
+        "description": "<h3>Đặc điểm nổi bật:</h3><ul style=\"list-style-position: inside; padding-left: 0;\"><li>Dung lượng siêu lớn 30000mAh</li><li>Công suất cao 90W có thể sạc cho laptop</li><li>Công nghệ iSmart tự động điều chỉnh dòng sạc tối ưu</li><li>Sạc nhanh lại chỉ mất khoảng 3 giờ</li><li>Thiết kế cao cấp với vỏ kim loại</li></ul><h3>Thông tin chi tiết:</h3><p>Sạc dự phòng Ravpower PD Pioneer 30000mAh là lựa chọn hàng đầu cho người dùng cần dung lượng pin lớn và công suất sạc cao. Với công suất 90W, pin này có thể sạc nhanh cho hầu hết các loại laptop, bao gồm MacBook Pro và Dell XPS. Công nghệ iSmart tự động nhận diện thiết bị và cung cấp dòng sạc tối ưu, bảo vệ pin thiết bị.</p>"
+    }
+] 

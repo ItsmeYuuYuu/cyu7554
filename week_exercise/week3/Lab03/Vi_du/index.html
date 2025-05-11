@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+      integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kanit&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/fork-awesome/css/fork-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      /* Style cho form đăng ký */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      table {
+        width: 100%;
+        background-color: #f0f0f0; /* Màu nền xám nhạt giống trong ảnh */
+        border-radius: 10px;
+        padding: 20px;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 10px;
+        vertical-align: top;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      select,
+      input[type="file"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 10px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50; /* Màu xanh cho nút Đăng ký */
+        color: white;
+      }
+
+      input[type="reset"] {
+        background-color: #f44336; /* Màu đỏ cho nút Xóa */
+        color: white;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 10px 0;
+      }
+
+      em {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      b {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <form
+        name="frmdangkithanhvien"
+        action="xlThem.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <table border="0" width="100%">
+          <tr>
+            <td colspan="2" align="center"><em>ĐĂNG KÝ THÀNH VIÊN</em></td>
+          </tr>
+          <tr>
+            <td>Tên đăng nhập</td>
+            <td><input type="text" name="nmUsername" size="30" /></td>
+          </tr>
+          <tr>
+            <td>Mật khẩu</td>
+            <td><input type="password" name="nmPassword" size="30" /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>THÔNG TIN CÁ NHÂN</b></td>
+          </tr>
+          <tr>
+            <td>Họ tên</td>
+            <td><input type="text" name="nmFullName" size="50" /></td>
+          </tr>
+          <tr>
+            <td>Ngày sinh</td>
+            <td><input type="date" name="nmBirthDate" /></td>
+          </tr>
+          <tr>
+            <td>Giới tính</td>
+            <td>
+              <input type="radio" name="nmGender" value="male" /> Nam
+              <input type="radio" name="nmGender" value="female" /> Nữ
+            </td>
+          </tr>
+          <tr>
+            <td>Địa chỉ email</td>
+            <td><input type="email" name="nmEmailAdd" size="50" /></td>
+          </tr>
+          <tr>
+            <td>Hình đại diện</td>
+            <td><input type="file" name="nmAvatar" /></td>
+          </tr>
+          <tr>
+            <td>Địa chỉ</td>
+            <td><input type="text" name="nmAddress" size="50" /></td>
+          </tr>
+          <tr>
+            <td>Điện thoại</td>
+            <td><input type="tel" name="nmCellphone" size="50" /></td>
+          </tr>
+          <tr>
+            <td>Câu hỏi bí mật</td>
+            <td>
+              <select name="nmPrivateQuestion">
+                <option value="">Chọn câu hỏi bí mật</option>
+                <option value="firstschool">
+                  Ngôi trường đầu tiên của bạn là gì
+                </option>
+                <option value="firstpet">
+                  Con vật đầu tiên mà bạn nuôi tên gì
+                </option>
+                <option value="childhoodmemory">
+                  Kỉ niệm thời thơ ấu của bạn là gì
+                </option>
+                <option value="hometown">Quê bạn ở đâu</option>
+                <option value="bff">
+                  Tên người bạn thân nhất của bạn là gì?
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Trả lời</td>
+            <td><input type="text" name="nmPrivateAnswer" size="50" /></td>
+          </tr>
+          <tr>
+            <td>Bạn đang quan tâm đến nhóm sản phẩm nào?</td>
+            <td>
+              <table class="radio-table">
+                <tr>
+                  <td>
+                    <input type="radio" name="nmInterests" value="vanhoc" /> Văn
+                    học<br />
+                    <input type="radio" name="nmInterests" value="kinhte" />
+                    Kinh tế<br />
+                    <input type="radio" name="nmInterests" value="tamly" /> Tâm
+                    lý
+                  </td>
+                  <td>
+                    <input type="radio" name="nmInterests" value="thieunhi" />
+                    Thiếu nhi<br />
+                    <input type="radio" name="nmInterests" value="giaokhoa" />
+                    Giáo khoa<br />
+                    <input type="radio" name="nmInterests" value="ngoaingu" />
+                    Ngoại ngữ
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <br />
+              <input type="submit" name="nmSubmit" value="Đăng ký" />
+              <input type="reset" name="nmReset" value="Xóa" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

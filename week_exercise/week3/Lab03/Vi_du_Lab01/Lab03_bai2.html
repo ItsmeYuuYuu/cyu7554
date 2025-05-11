@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kanit&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+        iframe {
+            width: 100%;
+            height: 700px; /* Điều chỉnh chiều cao để khớp với video */
+            border: none;
+        }
+        /* Ẩn các iframe ban đầu */
+        #contentFrame, #servicesFrame {
+            display: none;
+        }
+    </style>
+    <script>
+        // Hàm hiển thị nội dung trang chủ
+        function showHome() {
+            document.getElementById("homeContent").style.display = "block";
+            document.getElementById("contentFrame").style.display = "none";
+            document.getElementById("servicesFrame").style.display = "none";
+        }
+
+        // Hàm hiển thị form đăng nhập
+        function showLogin() {
+            document.getElementById("homeContent").style.display = "none";
+            document.getElementById("contentFrame").style.display = "block";
+            document.getElementById("servicesFrame").style.display = "none";
+        }
+
+        // Hàm hiển thị video YouTube trong iframe của DỊCH VỤ
+        function showServices() {
+            document.getElementById("homeContent").style.display = "none";
+            document.getElementById("contentFrame").style.display = "none";
+            document.getElementById("servicesFrame").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="banner_logo">
+                <a href="#"> <img src="images/bookstoreBanner.jpg" alt="" style="border-radius: 10px;" width="1000px" height="300px"></a>
+            </div>
+        </div>
+
+        <div id="menu">
+            <div id="menu_left_corner"></div>
+            <div id="menu_content">
+                <ul id="hmenu">
+                    <li><a href="#" onclick="showHome()"><img src="images/layout/home.png" /> TRANG CHỦ</a></li>
+                    <li class="devider"> </li>
+                    <li><a href="#" onclick="showServices()"><img src="images/layout/services.png" /> DỊCH VỤ</a></li>
+                    <li class="devider"> </li>
+                    <li><a href="#"><img src="images/layout/favs.png" /> TIN KHUYẾN MÃI</a></li>
+                    <li class="devider"> </li>
+                    <li><a href="#"><img src="images/layout/car.png" /> GIAO HÀNG</a></li>
+                    <li class="devider"> </li>
+                    <li><a href="/week_exercise/week3/Lab03/Vi_du/index.html" target="contentFrame" onclick="showLogin()"><img src="images/layout/user_add.png" /> ĐĂNG NHẬP</a></li>
+                </ul>
+            </div>
+            <div id="menu_right_corner"></div>
+            <div style="clear:both"></div>
+        </div>
+
+        <div id="path"></div>
+        <div id="main">
+            <div id="left">
+                <div class="title">Loại sản phẩm</div>
+                <ul class="categories">
+                    <li class="lmenu1"><a href=""> <img src="images/layout/checked.png" />   Văn Học</a></li>
+                    <li class="lmenu2"><a href=""> <img src="images/layout/checked.png" />   Kinh Tế</a></li>
+                    <li class="lmenu1"><a href=""> <img src="images/layout/checked.png" />   Tâm Lý</a></li>
+                    <li class="lmenu2"><a href=""> <img src="images/layout/checked.png" />   Thiếu Nhi</a></li>
+                    <li class="lmenu1"><a href=""> <img src="images/layout/checked.png" />   Giáo Khoa</a></li>
+                    <li class="lmenu2"><a href=""> <img src="images/layout/checked.png" />   Ngoại Ngữ</a></li>
+                </ul>
+                <div class="box">
+                    <div class="title">SP Khuyến mãi</div>
+                    <div class="box_content" style="height:190px;">
+                    <!-- Chèn thẻ marquee chạy các sp khuyến mãi ở đây -->
+                    <marquee direction="up" scrollamount="4" style="height: 190px;">
+                        <div style="color: red; text-align: center; margin-bottom: 5px; font-weight: bold; font-size: 14px;">Hoa Namiya (Tai Ban 2018)</div>
+                        <a href="#">
+                            <img src="images/Sach_2.jpg" alt="" style="border-radius: 0px; display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        </a>
+  
+                        <div style="display: flex; align-items: center;text-align: center; justify-content: center;">
+                            <div style="text-decoration: line-through; color: red;">63.000</div>
+                            <div style="margin-left: 10px; text-decoration: line-through; color: gray;">105.000</div>
+                        </div>
+                        <div class="spacer" style="width: 180px;align-items: center;  height: 1px;border: 1px solid #030305;"></div>
+                        <div style="color: red; text-align: center; margin-top: 5px;font-weight: bold; font-size: 14px;">Goth - Những kẻ hắc ám (Tái bản 2018)</div>
+                    </marquee>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+                <!-- Phần nội dung trang chủ -->
+                <div id="homeContent">
+                    <div class="center_title">43 Bí mật bán hàng online tuyệt đỉnh</div>
+                    <div class="big_box" style="align-content: center;">
+                        <div class="big_box_top"></div>
+                        <div class="big_box_mid">
+                            <img src="images/Sach_4.png" width="250" alt="S6 Edge" align="left" />
+                            Trạng thái: <span class="spec_value">Còn hàng</span><br />
+                            Thời gian bảo hành: <span class="spec_value">12 tháng</span><br />
+                            Cuốn sách 43 Bí Mật Bán Hàng Online Tuyệt Đỉnh mang đến cho bạn:</b>
+                            <ul>
+                                <li>Khách hàng thường làm gì trên mạng, xu hướng mua hàng của họ là gì?</li>
+                                <li>Tìm kiếm nguồn hàng ở đâu?</li>
+                                <li>Các công cụ hỗ trợ bán hàng online tối ưu</li>
+                                <li>20 cách tìm kiếm khách hàng tiềm năng</li>
+                            </ul>
+                            Khuyến mãi: <span class="spec_value">Không có</span><br />
+                            Giá: <span>184,000</span>
+                        </div>
+                        <div class="big_box_bot"></div>
+                    </div>
+                </div>
+                <!-- Phần iframe cho form đăng nhập -->
+                <iframe id="contentFrame" name="contentFrame" src="about:blank"></iframe>
+                <!-- Phần iframe cho video YouTube (DỊCH VỤ) -->
+                <iframe id="servicesFrame" name="servicesFrame" src="about:blank"></iframe>
+            </div>
+
+
+            <div id="right">
+                <div class="title">Hãng sản xuất</div>
+                <ul class="categories">
+                    <li class="lmenu1"><a href=""> <img src="images/layout/checked.png" />   CHONMUA 365</a></li>
+                    <li class="lmenu2"><a href=""> <img src="images/layout/checked.png" />   Deli</a></li>
+                    <li class="lmenu1"><a href=""> <img src="images/layout/checked.png" />   Thiên Long</a></li>
+                    <li class="lmenu2"><a href=""> <img src="images/layout/checked.png" />   KLONG</a></li>
+                    <li class="lmenu1"><a href=""> <img src="images/layout/checked.png" />   Lazy Box</a></li>
+                    <li class="lmenu2"><a href=""> <img src="images/layout/checked.png" />   M&G</a></li>
+                </ul>
+                <div class="box">
+                    <div class="title">Quảng cáo</div>
+                    <div class="box_content" style="height:190px; text-align: center;">
+                        <a href="#"> <img src="images/Sach_7.jpg" alt="" style="border-radius: 0px;" width="187px" height="190px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tải video YouTube vào iframe của DỊCH VỤ khi bấm
+        document.querySelector('a[onclick="showServices()"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById("servicesFrame").src = "https://www.youtube.com/embed/aoNquxbLpqA?si=fw2tCJlde4s4xAwP";
+            showServices();
+        });
+    </script>
+</body>
+
+</html>

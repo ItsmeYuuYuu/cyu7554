@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Cuồng Sạc</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Cuongsac/assets/css/styles.css">
+    <link rel="stylesheet" href="/Cuongsac/assets/css/login.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            Tư vấn sạc dự phòng, củ sạc<b>: 0356180093</b> • Địa chỉ<b>: 180 Cao Lỗ, Phường 4 - Quận 8 - TPHCM</b>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Nav Header -->
+            <div class="mobile-nav-header">
+                <button class="mobile-menu-toggle" title="Menu" aria-label="Mở menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="logo mobile-logo">
+                    <a href="/Cuongsac/">
+                        <img src="/Cuongsac/assets/images/logo.png" alt="Cuồng Sạc Logo">
+                    </a>
+                </div>
+                
+                <div class="mobile-actions">
+                    <a href="/Cuongsac/pages/login.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="/Cuongsac/pages/cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Desktop Logo -->
+            <div class="logo desktop-logo">
+                <a href="/Cuongsac/">
+                    <img src="/Cuongsac/assets/images/logo.png" alt="Cuồng Sạc Logo">
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button type="submit" title="Tìm kiếm" aria-label="Tìm kiếm">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="actions">
+                <a href="/Cuongsac/pages/login.html" class="action-item">
+                    <i class="fas fa-user"></i>
+                    <span>Đăng nhập</span>
+                </a>
+                <a href="/Cuongsac/pages/login.html" class="action-item">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Đăng ký</span>
+                </a>
+                <a href="/Cuongsac/pages/cart.html" class="action-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Giỏ hàng</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-bars"></i>
+                    <span>Danh mục sản phẩm</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Cuongsac/pages/categories/power-banks/">SẠC DỰ PHÒNG</a></li>
+                    <li><a href="/Cuongsac/pages/categories/chargers/">CỦ SẠC</a></li>
+                    <li><a href="/Cuongsac/pages/categories/fast-charging/">SẠC NHANH</a></li>
+                    <li><a href="/Cuongsac/pages/categories/wireless/">SẠC KHÔNG DÂY</a></li>
+                    <li><a href="/Cuongsac/pages/categories/laptop-chargers/">SẠC CHO LAPTOP</a></li>
+                    <li><a href="/Cuongsac/pages/categories/budget/">SẠC GIÁ RẺ</a></li>
+                    <li><a href="/Cuongsac/pages/categories/combo/">COMBO SẠC</a></li>
+                    <li><a href="/Cuongsac/pages/categories/accessories/">LINH KIỆN SẠC</a></li>
+                    <li><a href="#">XEM THÊM. . .</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Chất lượng đảm bảo</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-truck"></i>
+                    <span>Vận chuyển siêu tốc</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Tư vấn sản phẩm: 0356180093</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/Cuongsac/">Trang chủ</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Đăng nhập</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <!-- Login Tabs -->
+                <div class="login-tabs">
+                    <div class="login-tab active" id="login-tab">Đăng nhập</div>
+                    <div class="login-tab" id="register-tab">Đăng ký</div>
+                </div>
+                
+                <!-- Login Form Container -->
+                <div class="login-form-container">
+                    <!-- Login Form -->
+                    <form class="login-form active" id="login-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Vui lòng nhập email của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Vui lòng nhập mật khẩu" required>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#" id="forgot-password-link">Quên mật khẩu?</a>
+                        </div>
+                        <button type="submit" class="login-button">Đăng nhập</button>
+                        
+                        <p class="login-info">
+                            Bạn chưa có tài khoản? <a href="#" id="switch-to-register">Đăng ký</a>
+                        </p>
+                        
+                        <p class="terms-text">
+                            This site is protected by reCAPTCHA and the Google 
+                            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and 
+                            <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
+                        </p>
+                    </form>
+                    
+                    <!-- Register Form -->
+                    <form class="login-form" id="register-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Mật khẩu" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+                        <button type="submit" class="login-button">Đăng ký</button>
+                        
+                        <p class="login-info">
+                            Bạn đã có tài khoản? <a href="#" id="switch-to-login">Đăng nhập</a>
+                        </p>
+                        
+                        <p class="terms-text">
+                            This site is protected by reCAPTCHA and the Google 
+                            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and 
+                            <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Đăng ký nhận bản tin</h3>
+                    <p>Để nhận các thông tin mới từ Cuồng Sạc cũng như các chương trình khuyến mãi</p>
+                </div>
+                <div class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="✉ Vui lòng nhập email của bạn...">
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Về Cuồng Sạc <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <p>Trang thương mại (không) chính thức của Hội Cuồng Sạc - Sạc Thủ. Luôn tìm kiếm những sản phẩm vì Sạc Thủ.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Thông tin liên hệ <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> 180 Cao Lỗ - Phường 4 - Quận 8 - TPHCM</li>
+                                <li><i class="fas fa-phone"></i> 0356180093</li>
+                                <li><i class="fas fa-envelope"></i> mnhattheacre@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Tài khoản ngân hàng <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="/Cuongsac/tai-khoan-ngan-hang">Tài khoản ngân hàng</a></li>
+                                <li><a href="/Cuongsac/tim-kiem">Tìm kiếm</a></li>
+                                <li><a href="/Cuongsac/phuong-thuc-thanh-toan">Phương thức thanh toán</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <div class="footer-dropdown">
+                        <h4>Chính sách <i class="fas fa-chevron-down"></i></h4>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="/Cuongsac/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                                <li><a href="/Cuongsac/quy-dinh-bao-hanh">Quy định bảo hành</a></li>
+                                <li><a href="/Cuongsac/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
+                                <li><a href="/Cuongsac/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
+                                <li><a href="/Cuongsac/chinh-sach-van-chuyen">Chính sách vận chuyển và kiểm hàng</a></li>
+                                <li><a href="/Cuongsac/phan-dinh-trach-nhiem">Phân định trách nhiệm của tổ chức cung ứng dịch vụ logistics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Student Info Bar -->
+    <div class="student-info">
+        <div class="container">
+            <p>Họ tên: Nguyễn Minh Nhật - MSSV: DH52201153 - Lớp: D22_TH12 - Nhóm: 26 - Ca học: Thứ 2_Ca 4</p>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="/Cuongsac/assets/js/script.js"></script>
+    <script src="/Cuongsac/assets/js/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Các tab đăng nhập/đăng ký
+            const loginTab = document.getElementById('login-tab');
+            const registerTab = document.getElementById('register-tab');
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const switchToRegister = document.getElementById('switch-to-register');
+            const switchToLogin = document.getElementById('switch-to-login');
+            
+            // Chuyển tab đăng nhập/đăng ký
+            function showLoginForm() {
+                loginTab.classList.add('active');
+                registerTab.classList.remove('active');
+                loginForm.classList.add('active');
+                registerForm.classList.remove('active');
+            }
+            
+            function showRegisterForm() {
+                registerTab.classList.add('active');
+                loginTab.classList.remove('active');
+                registerForm.classList.add('active');
+                loginForm.classList.remove('active');
+            }
+            
+            // Xử lý sự kiện click
+            loginTab.addEventListener('click', showLoginForm);
+            registerTab.addEventListener('click', showRegisterForm);
+            switchToRegister.addEventListener('click', function(e) {
+                e.preventDefault();
+                showRegisterForm();
+            });
+            switchToLogin.addEventListener('click', function(e) {
+                e.preventDefault();
+                showLoginForm();
+            });
+            
+            // Xử lý form submit
+            document.getElementById('login-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Xử lý đăng nhập
+                alert('Chức năng đăng nhập đang được phát triển');
+            });
+            
+            document.getElementById('register-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Xử lý đăng ký
+                alert('Chức năng đăng ký đang được phát triển');
+            });
+            
+            // Xử lý quên mật khẩu
+            document.getElementById('forgot-password-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                // Xử lý quên mật khẩu
+                alert('Chức năng quên mật khẩu đang được phát triển');
+            });
+        });
+    </script>
+</body>
+</html> 

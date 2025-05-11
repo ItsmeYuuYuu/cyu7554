@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Image Upload</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .login-form {
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        .form-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 3px;
+        }
+        .success-message {
+            color: green;
+            margin-top: 10px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        #selectedImage {
+            max-width: 300px;
+            margin-top: 10px;
+        }
+        #fileInput {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Phần Login -->
+    <div class="login-form">
+        <h1>Login</h1>
+        <div class="form-container">
+            Username: <input type="text" id="username" name="username">
+            Password: <input type="password" id="password" name="password">
+            <button id="loginBtn">Login</button>
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <!-- Phần Upload Hình -->
+    <div>
+        <img id="selectedImage" src="" alt="Selected Image">
+        <br>
+        <input type="file" id="fileInput" accept="image/*">
+        <button id="chooseImage">Chọn hình</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Xử lý phần Login
+            var accounts = [
+                { username: 'user1', password: 'password1' },
+                { username: 'user2', password: 'password2' },
+                { username: 'user3', password: 'password3' }
+            ];
+
+            $('#loginBtn').click(function() {
+                var username = $('#username').val();
+                var password = $('#password').val();
+                
+                var isValid = accounts.some(function(account) {
+                    return account.username === username && account.password === password;
+                });
+
+                if (isValid) {
+                    $('#message').removeClass('error-message').addClass('success-message')
+                        .text('Đăng nhập thành công');
+                } else {
+                    $('#message').removeClass('success-message').addClass('error-message')
+                        .text('Đăng nhập thất bại, vui lòng kiểm tra lại thông tin');
+                }
+            });
+
+            // Xử lý phần Upload Hình
+            $('#chooseImage').click(function() {
+                $('#fileInput').click();
+            });
+
+            $('#fileInput').change(function(e) {
+                if (e.target.files && e.target.files[0]) {
+                    var reader = new FileReader();
+                    
+                    reader.onload = function(event) {
+                        $('#selectedImage').attr('src', event.target.result);
+                    }
+                    
+                    reader.readAsDataURL(e.target.files[0]);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

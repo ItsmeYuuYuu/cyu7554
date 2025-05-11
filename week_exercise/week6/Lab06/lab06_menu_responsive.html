@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    .navbar {
+      background: #2d2d2d;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      position: relative;
+      height: 48px;
+      width: 100vw;
+    }
+    .navbar .menu {
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0 20px;
+      background: transparent;
+      position: static;
+      height: 48px;
+    }
+    .navbar .menu li {
+      padding: 0 18px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      font-size: 20px;
+    }
+    .navbar .menu li:hover {
+      background: #0099ff;
+      color: #fff;
+    }
+    .menu-toggle {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: row;
+        height: 48px;
+        padding: 0;
+        background: #2d2d2d;
+      }
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        z-index: 20;
+        color: #fff;
+        background: none;
+        border: none;
+      }
+      .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        background: #2d2d2d;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 0;
+        z-index: 10;
+        height: auto;
+        align-items: stretch;
+      }
+      .navbar .menu.open {
+        display: flex;
+      }
+      .navbar .menu li {
+        color: #fff;
+        padding: 18px 0 18px 16px;
+        border-bottom: none;
+        height: auto;
+        font-size: 20px;
+        background: #2d2d2d;
+        width: 100vw;
+        justify-content: flex-start;
+        text-align: left;
+      }
+      .navbar .menu li:first-child {
+        background: #2d2d2d;
+        color: #222;
+        font-weight: normal;
+        height: 48px;
+        padding: 0 0 0 16px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+      }
+      .navbar .menu li:hover {
+        background: #0099ff;
+        color: #fff;
+      }
+      .navbar .menu li:first-child:hover {
+        background: #0099ff;
+        color: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      &#9776;
+    </button>
+    <ul class="menu" id="menu">
+      <li>Home</li>
+      <li>News</li>
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
+  </nav>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+    document.addEventListener('click', function(event) {
+      if (window.innerWidth <= 600) {
+        if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+          menu.classList.remove('open');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

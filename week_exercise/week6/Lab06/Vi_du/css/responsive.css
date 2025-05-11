@@ -1,0 +1,167 @@
+/* Tablet Device = 768px - 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header__menu {
+        padding: 20px 0;
+    }
+
+    .header__menu ul li {
+        margin-right: 20px;
+    }
+
+    .hero__search__form {
+        width: 100%;
+    }
+
+    .hero__categories__all {
+        padding: 10px 25px 10px 20px;
+    }
+
+    .hero__categories ul {
+        padding-left: 20px;
+    }
+
+    .featured__item {
+        margin-bottom: 50px;
+    }
+
+    .blog__item {
+        margin-bottom: 50px;
+    }
+
+    .footer__widget {
+        margin-bottom: 30px;
+    }
+}
+
+/* Wide Mobile = < 767px */
+@media screen and (max-width: 767px) {
+    .hero__categories {
+        margin-bottom: 30px;
+    }
+
+    .hero__search {
+        margin-bottom: 30px;
+    }
+
+    .hero__search__form {
+        width: 100%;
+    }
+
+    .hero__search__form form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero__search__form form .hero__search__categories {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero__search__phone {
+        float: none;
+        margin-top: 30px;
+    }
+
+    .featured__item {
+        margin-bottom: 50px;
+    }
+
+    .blog__item {
+        margin-bottom: 50px;
+    }
+
+    .footer__widget {
+        margin-bottom: 30px;
+    }
+
+    .header__top {
+        display: none;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .humberger__open {
+        display: block;
+        font-size: 22px;
+        color: #1c1c1c;
+        height: 35px;
+        width: 35px;
+        line-height: 33px;
+        text-align: center;
+        border: 1px solid #1c1c1c;
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 22px;
+    }
+
+    .header__cart {
+        text-align: center;
+        padding: 10px 0 24px;
+    }
+
+    .hero__item {
+        height: auto;
+        padding: 30px;
+    }
+}
+
+/* Small Device = < 479px */
+@media screen and (max-width: 479px) {
+    .hero__search__form form .hero__search__categories {
+        display: none;
+    }
+
+    .featured__controls ul li {
+        margin-bottom: 10px;
+    }
+
+    .featured__item {
+        width: 100%;
+    }
+
+    .blog__item {
+        width: 100%;
+    }
+
+    .footer__widget ul {
+        width: 100%;
+    }
+
+    .footer__widget ul:last-child {
+        margin-top: 20px;
+    }
+
+    .hero__search__phone {
+        margin-top: 20px;
+    }
+
+    .hero__search__phone__icon {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero__search__phone__text {
+        text-align: center;
+    }
+
+    .hero__text h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .hero__text p {
+        margin-bottom: 25px;
+    }
+
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__cart {
+        text-align: center;
+    }
+} 
