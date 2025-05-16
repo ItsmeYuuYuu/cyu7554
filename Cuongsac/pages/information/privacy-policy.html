@@ -1,27 +1,9 @@
-// Tạo trang danh mục tự động
-const fs = require('fs');
-const path = require('path');
-
-// Danh sách các danh mục cần tạo và thông tin tương ứng
-const categories = [
-    { slug: 'laptop-chargers', name: 'Sạc Cho Laptop', categorySlug: 'laptop-chargers' },
-    { slug: 'budget', name: 'Sạc Giá Rẻ', categorySlug: 'budget' },
-    { slug: 'combo', name: 'Combo Sạc', categorySlug: 'combo' },
-    { slug: 'accessories', name: 'Linh Kiện Sạc', categorySlug: 'accessories' },
-    { slug: 'power-banks', name: 'Sạc Dự Phòng', categorySlug: 'power-banks' },
-    { slug: 'chargers', name: 'Củ Sạc', categorySlug: 'chargers' },
-    { slug: 'fast-charging', name: 'Sạc Nhanh', categorySlug: 'fast-charging' },
-    { slug: 'wireless', name: 'Sạc Không Dây', categorySlug: 'wireless' }
-];
-
-// Tạo template HTML cho trang danh mục
-function createCategoryTemplate(categoryName, categorySlug) {
-    return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${categoryName} - Cuồng Sạc</title>
+    <title>Chính sách bảo mật - Cuồng Sạc</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +13,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/Cuongsac/assets/css/styles.css">
-    <link rel="stylesheet" href="/Cuongsac/assets/css/category.css">
+    <link rel="stylesheet" href="/Cuongsac/assets/css/information.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -85,7 +67,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
                     <i class="fas fa-user"></i>
                     <span>Đăng nhập</span>
                 </a>
-                <a href="/Cuongsac/pages/login.html" class="action-item">
+                <a href="/Cuongsac/pages/register.html" class="action-item">
                     <i class="fas fa-sign-in-alt"></i>
                     <span>Đăng ký</span>
                 </a>
@@ -136,12 +118,6 @@ function createCategoryTemplate(categoryName, categorySlug) {
                     <span>Tư vấn sản phẩm: 0356180093</span>
                 </a>
             </div>
-            <div class="nav-item">
-                <a href="/Cuongsac/pages/about.html" class="nav-link">
-                    <i class="fas fa-info-circle"></i>
-                    <span>THÔNG TIN TRANG WEB</span>
-                </a>
-            </div>
         </div>
     </nav>
 
@@ -151,58 +127,65 @@ function createCategoryTemplate(categoryName, categorySlug) {
             <div class="breadcrumb">
                 <a href="/Cuongsac/">Trang chủ</a>
                 <i class="fas fa-chevron-right"></i>
-                <span>${categoryName}</span>
+                <span>Chính sách bảo mật</span>
             </div>
         </div>
     </div>
 
-    
-
-    <!-- Category Content -->
-    <section class="category-content">
+    <!-- Main Content -->
+    <main class="information-content">
         <div class="container">
-            <div class="category-header">
-                <h1>${categoryName.toUpperCase()}</h1>
-                <div class="filter-options">
-                    <div class="sort-by">
-                        <label for="sort-select">Sắp xếp:</label>
-                        <select id="sort-select">
-                            <option value="default">Mặc định</option>
-                            <option value="price-asc">Giá tăng dần</option>
-                            <option value="price-desc">Giá giảm dần</option>
-                            <option value="name-asc">Tên A-Z</option>
-                            <option value="name-desc">Tên Z-A</option>
-                        </select>
-                    </div>
-                </div>
+            <h1>Chính sách bảo mật</h1>
+            
+            <div class="content-section">
+                <h2>1. Thu thập thông tin</h2>
+                <p>Chúng tôi thu thập các thông tin sau từ khách hàng:</p>
+                <ul>
+                    <li>Họ tên</li>
+                    <li>Địa chỉ email</li>
+                    <li>Số điện thoại</li>
+                    <li>Địa chỉ giao hàng</li>
+                </ul>
             </div>
 
-            <div class="product-grid" id="category-products">
-                <!-- Products will be loaded from JSON -->
-                <!-- Loading state -->
-                <div class="loading-skeleton">
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                </div>
+            <div class="content-section">
+                <h2>2. Mục đích và phạm vi thu thập</h2>
+                <p>Việc thu thập thông tin nhằm:</p>
+                <ul>
+                    <li>Giao hàng</li>
+                    <li>Thông báo tình trạng đơn hàng</li>
+                    <li>Liên hệ xác nhận khi cần thiết</li>
+                    <li>Gửi thông tin khuyến mãi (nếu được sự đồng ý)</li>
+                </ul>
             </div>
 
-            <!-- Pagination -->
-            <div class="pagination">
-                <button class="pagination-button active">1</button>
-                <button class="pagination-button">2</button>
-                <button class="pagination-button">3</button>
-                <button class="pagination-button next" title="Trang tiếp theo">
-                    <i class="fas fa-angle-right"></i>
-                </button>
+            <div class="content-section">
+                <h2>3. Thời gian lưu trữ</h2>
+                <p>Dữ liệu cá nhân của khách hàng sẽ được lưu trữ cho đến khi có yêu cầu hủy bỏ. Còn lại, chúng tôi sẽ lưu trữ thông tin của khách hàng trong thời gian cần thiết để phục vụ cho các mục đích được đề cập trong chính sách này.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>4. Cam kết bảo mật</h2>
+                <p>Chúng tôi cam kết:</p>
+                <ul>
+                    <li>Không bán hoặc chia sẻ thông tin của khách hàng cho bên thứ ba</li>
+                    <li>Bảo mật tuyệt đối thông tin của khách hàng</li>
+                    <li>Chỉ sử dụng thông tin cho mục đích đã nêu</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>5. Quyền của khách hàng</h2>
+                <p>Khách hàng có quyền:</p>
+                <ul>
+                    <li>Yêu cầu xem thông tin cá nhân của mình</li>
+                    <li>Yêu cầu chỉnh sửa thông tin không chính xác</li>
+                    <li>Yêu cầu xóa thông tin</li>
+                    <li>Từ chối nhận email marketing</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Newsletter Subscription -->
     <section class="newsletter-section">
@@ -296,45 +279,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
 
     <!-- Custom JavaScript -->
     <script src="/Cuongsac/assets/js/script.js"></script>
-    <script src="/Cuongsac/assets/js/category.js"></script>
+    <script src="/Cuongsac/assets/js/cart.js"></script>
     <script src="/Cuongsac/assets/js/newsletter.js"></script>
-        <script src="/Cuongsac/assets/js/cart.js"></script>
-    <script>
-        // Debug để kiểm tra lỗi ảnh
-        document.addEventListener('DOMContentLoaded', function() {
-            // Đặt danh mục hiện tại
-            currentCategory = '${categorySlug}';
-            
-            // Bắt lỗi khi ảnh không tải được
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.addEventListener('error', function() {
-                    console.error('Không thể tải ảnh:', this.src);
-                    this.src = '/Cuongsac/assets/images/logo.png'; // Ảnh thay thế
-                    this.classList.add('image-error');
-                });
-            });
-        });
-    </script>
 </body>
-</html>`;
-}
-
-// Tạo trang cho từng danh mục
-categories.forEach(category => {
-    const dirPath = path.join(__dirname, 'pages', 'categories', category.slug);
-    const filePath = path.join(dirPath, 'index.html');
-    
-    // Tạo thư mục nếu chưa tồn tại
-    if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-    }
-    
-    // Tạo file HTML
-    const content = createCategoryTemplate(category.name, category.categorySlug);
-    fs.writeFileSync(filePath, content);
-    
-    console.log(`Created category page: ${category.name} at ${filePath}`);
-});
-
-console.log('All category pages created successfully!'); 
+</html> 

@@ -1,4 +1,4 @@
-/* Login Page Styles */
+/* Register Page Styles */
 .login-section {
     padding: 40px 0;
 }
@@ -124,21 +124,6 @@
 }
 
 .login-info a:hover {
-    text-decoration: underline;
-}
-
-.forgot-password {
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.forgot-password a {
-    color: #0066cc;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.forgot-password a:hover {
     text-decoration: underline;
 }
 

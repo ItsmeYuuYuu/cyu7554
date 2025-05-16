@@ -1,27 +1,9 @@
-// Tạo trang danh mục tự động
-const fs = require('fs');
-const path = require('path');
-
-// Danh sách các danh mục cần tạo và thông tin tương ứng
-const categories = [
-    { slug: 'laptop-chargers', name: 'Sạc Cho Laptop', categorySlug: 'laptop-chargers' },
-    { slug: 'budget', name: 'Sạc Giá Rẻ', categorySlug: 'budget' },
-    { slug: 'combo', name: 'Combo Sạc', categorySlug: 'combo' },
-    { slug: 'accessories', name: 'Linh Kiện Sạc', categorySlug: 'accessories' },
-    { slug: 'power-banks', name: 'Sạc Dự Phòng', categorySlug: 'power-banks' },
-    { slug: 'chargers', name: 'Củ Sạc', categorySlug: 'chargers' },
-    { slug: 'fast-charging', name: 'Sạc Nhanh', categorySlug: 'fast-charging' },
-    { slug: 'wireless', name: 'Sạc Không Dây', categorySlug: 'wireless' }
-];
-
-// Tạo template HTML cho trang danh mục
-function createCategoryTemplate(categoryName, categorySlug) {
-    return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${categoryName} - Cuồng Sạc</title>
+    <title>Thông Tin Trang Web - Cuồng Sạc</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,9 +11,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/Cuongsac/assets/css/styles.css">
-    <link rel="stylesheet" href="/Cuongsac/assets/css/category.css">
+        <!-- Custom CSS -->    <link rel="stylesheet" href="/Cuongsac/assets/css/styles.css">    <link rel="stylesheet" href="/Cuongsac/assets/css/about.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -85,7 +65,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
                     <i class="fas fa-user"></i>
                     <span>Đăng nhập</span>
                 </a>
-                <a href="/Cuongsac/pages/login.html" class="action-item">
+                <a href="/Cuongsac/pages/register.html" class="action-item">
                     <i class="fas fa-sign-in-alt"></i>
                     <span>Đăng ký</span>
                 </a>
@@ -151,55 +131,133 @@ function createCategoryTemplate(categoryName, categorySlug) {
             <div class="breadcrumb">
                 <a href="/Cuongsac/">Trang chủ</a>
                 <i class="fas fa-chevron-right"></i>
-                <span>${categoryName}</span>
+                <span>Thông Tin Trang Web</span>
             </div>
         </div>
     </div>
 
-    
-
-    <!-- Category Content -->
-    <section class="category-content">
+    <!-- About Content -->
+    <section class="about-section">
         <div class="container">
-            <div class="category-header">
-                <h1>${categoryName.toUpperCase()}</h1>
-                <div class="filter-options">
-                    <div class="sort-by">
-                        <label for="sort-select">Sắp xếp:</label>
-                        <select id="sort-select">
-                            <option value="default">Mặc định</option>
-                            <option value="price-asc">Giá tăng dần</option>
-                            <option value="price-desc">Giá giảm dần</option>
-                            <option value="name-asc">Tên A-Z</option>
-                            <option value="name-desc">Tên Z-A</option>
-                        </select>
+            <div class="about-content">
+                <h1 class="about-title">Giới Thiệu Về Cuồng Sạc</h1>
+                
+                <div class="about-description">
+                    <p>Cuồng Sạc là một website thương mại điện tử chuyên về các sản phẩm sạc và phụ kiện sạc chất lượng cao. Chúng tôi tự hào là đơn vị cung cấp các giải pháp sạc đa dạng, từ sạc dự phòng, củ sạc cho đến các phụ kiện sạc không dây hiện đại.</p>
+                    <p>Với hơn 5 năm kinh nghiệm trong lĩnh vực công nghệ và phụ kiện điện tử, Cuồng Sạc đã và đang phục vụ hơn 50,000+ khách hàng trên toàn quốc. Chúng tôi không chỉ đơn thuần là một cửa hàng bán sạc, mà còn là người bạn đồng hành đáng tin cậy trong việc tư vấn và cung cấp giải pháp sạc tối ưu cho khách hàng.</p>
+                </div>
+
+                <div class="features-section">
+                    <h2 class="features-title">Cam Kết Của Chúng Tôi</h2>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% sản phẩm chính hãng, có giấy tờ chứng minh nguồn gốc xuất xứ rõ ràng</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-medal"></i>
+                        <span>Bảo hành chính hãng từ 12-24 tháng tùy sản phẩm</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-sync"></i>
+                        <span>Đổi trả miễn phí trong 30 ngày nếu sản phẩm lỗi do nhà sản xuất</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-tags"></i>
+                        <span>Giá cả cạnh tranh nhất thị trường với nhiều chương trình khuyến mãi hấp dẫn</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="product-grid" id="category-products">
-                <!-- Products will be loaded from JSON -->
-                <!-- Loading state -->
-                <div class="loading-skeleton">
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
+                <div class="features-section">
+                    <h2 class="features-title">Dịch Vụ Của Chúng Tôi</h2>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <span>Tư vấn miễn phí 24/7 qua hotline và chat trực tuyến</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Giao hàng nhanh chóng trong vòng 2h trong nội thành TP.HCM</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Hỗ trợ kỹ thuật và bảo hành tận nơi cho khách hàng doanh nghiệp</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>Chính sách trả góp 0% lãi suất cho đơn hàng từ 3 triệu</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Pagination -->
-            <div class="pagination">
-                <button class="pagination-button active">1</button>
-                <button class="pagination-button">2</button>
-                <button class="pagination-button">3</button>
-                <button class="pagination-button next" title="Trang tiếp theo">
-                    <i class="fas fa-angle-right"></i>
-                </button>
+                <div class="features-section">
+                    <h2 class="features-title">Các Tính Năng Đã Thực Hiện</h2>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Chức năng giỏ hàng hoàn chỉnh với khả năng thêm, xóa, cập nhật số lượng sản phẩm</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-user"></i>
+                        <span>Hệ thống đăng ký và đăng nhập tài khoản với xác thực bảo mật cao</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-search"></i>
+                        <span>Tìm kiếm sản phẩm thông minh với gợi ý và lọc kết quả nâng cao</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-th-list"></i>
+                        <span>Hiển thị sản phẩm theo danh mục với bộ lọc và sắp xếp linh hoạt</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-image"></i>
+                        <span>Carousel banner và sản phẩm với animation mượt mà, tối ưu trải nghiệm</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Giao diện responsive hoàn toàn, tương thích trên mọi thiết bị và kích thước màn hình</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Hệ thống đặt hàng thông minh và theo dõi vận chuyển realtime</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-percentage"></i>
+                        <span>Quản lý khuyến mãi và mã giảm giá linh hoạt theo từng đối tượng khách hàng</span>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Đăng ký nhận bản tin với tính năng gửi email marketing tự động</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Hệ thống đánh giá và bình luận sản phẩm từ người dùng thực</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Danh sách yêu thích và lưu sản phẩm để xem sau</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Đa dạng phương thức thanh toán: COD, chuyển khoản, ví điện tử, thẻ tín dụng</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -213,10 +271,10 @@ function createCategoryTemplate(categoryName, categorySlug) {
                     <p>Để nhận các thông tin mới từ Cuồng Sạc cũng như các chương trình khuyến mãi</p>
                 </div>
                 <div class="newsletter-form">
-                    <form class="input-group">
+                    <Form class="input-group">
                         <input type="email" placeholder="✉ Vui lòng nhập email của bạn...">
                         <button type="submit">ĐĂNG KÝ</button>
-                    </form>
+                    </Form>
                 </div>
             </div>
         </div>
@@ -267,7 +325,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <div class="footer-dropdown">
                         <h4>Chính sách <i class="fas fa-chevron-down"></i></h4>
@@ -286,6 +344,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
             </div>
         </div>
     </footer>
+    
 
     <!-- Student Info Bar -->
     <div class="student-info">
@@ -296,45 +355,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
 
     <!-- Custom JavaScript -->
     <script src="/Cuongsac/assets/js/script.js"></script>
-    <script src="/Cuongsac/assets/js/category.js"></script>
+    <script src="/Cuongsac/assets/js/cart.js"></script>
     <script src="/Cuongsac/assets/js/newsletter.js"></script>
-        <script src="/Cuongsac/assets/js/cart.js"></script>
-    <script>
-        // Debug để kiểm tra lỗi ảnh
-        document.addEventListener('DOMContentLoaded', function() {
-            // Đặt danh mục hiện tại
-            currentCategory = '${categorySlug}';
-            
-            // Bắt lỗi khi ảnh không tải được
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.addEventListener('error', function() {
-                    console.error('Không thể tải ảnh:', this.src);
-                    this.src = '/Cuongsac/assets/images/logo.png'; // Ảnh thay thế
-                    this.classList.add('image-error');
-                });
-            });
-        });
-    </script>
 </body>
-</html>`;
-}
-
-// Tạo trang cho từng danh mục
-categories.forEach(category => {
-    const dirPath = path.join(__dirname, 'pages', 'categories', category.slug);
-    const filePath = path.join(dirPath, 'index.html');
-    
-    // Tạo thư mục nếu chưa tồn tại
-    if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-    }
-    
-    // Tạo file HTML
-    const content = createCategoryTemplate(category.name, category.categorySlug);
-    fs.writeFileSync(filePath, content);
-    
-    console.log(`Created category page: ${category.name} at ${filePath}`);
-});
-
-console.log('All category pages created successfully!'); 
+</html> 

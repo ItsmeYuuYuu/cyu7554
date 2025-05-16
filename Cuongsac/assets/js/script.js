@@ -116,11 +116,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to go to a specific slide
     function goToSlide(slideIndex) {
-        // Normalize the index
-        if (slideIndex < 0) slideIndex = totalSlides - 1;
-        if (slideIndex >= totalSlides) slideIndex = 0;
-        
-        currentSlide = slideIndex;
+        // Normalize the index using modulo for circular sliding
+        currentSlide = slideIndex % totalSlides;
+        if (currentSlide < 0) currentSlide = totalSlides - 1;
         
         // Update the transform
         sliderContainer.style.transition = 'transform 0.5s ease';

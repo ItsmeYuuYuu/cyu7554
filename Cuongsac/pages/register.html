@@ -1,27 +1,9 @@
-// Tạo trang danh mục tự động
-const fs = require('fs');
-const path = require('path');
-
-// Danh sách các danh mục cần tạo và thông tin tương ứng
-const categories = [
-    { slug: 'laptop-chargers', name: 'Sạc Cho Laptop', categorySlug: 'laptop-chargers' },
-    { slug: 'budget', name: 'Sạc Giá Rẻ', categorySlug: 'budget' },
-    { slug: 'combo', name: 'Combo Sạc', categorySlug: 'combo' },
-    { slug: 'accessories', name: 'Linh Kiện Sạc', categorySlug: 'accessories' },
-    { slug: 'power-banks', name: 'Sạc Dự Phòng', categorySlug: 'power-banks' },
-    { slug: 'chargers', name: 'Củ Sạc', categorySlug: 'chargers' },
-    { slug: 'fast-charging', name: 'Sạc Nhanh', categorySlug: 'fast-charging' },
-    { slug: 'wireless', name: 'Sạc Không Dây', categorySlug: 'wireless' }
-];
-
-// Tạo template HTML cho trang danh mục
-function createCategoryTemplate(categoryName, categorySlug) {
-    return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${categoryName} - Cuồng Sạc</title>
+    <title>Đăng ký - Cuồng Sạc</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +13,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/Cuongsac/assets/css/styles.css">
-    <link rel="stylesheet" href="/Cuongsac/assets/css/category.css">
+    <link rel="stylesheet" href="/Cuongsac/assets/css/login.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -85,7 +67,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
                     <i class="fas fa-user"></i>
                     <span>Đăng nhập</span>
                 </a>
-                <a href="/Cuongsac/pages/login.html" class="action-item">
+                <a href="/Cuongsac/pages/register.html" class="action-item">
                     <i class="fas fa-sign-in-alt"></i>
                     <span>Đăng ký</span>
                 </a>
@@ -151,55 +133,45 @@ function createCategoryTemplate(categoryName, categorySlug) {
             <div class="breadcrumb">
                 <a href="/Cuongsac/">Trang chủ</a>
                 <i class="fas fa-chevron-right"></i>
-                <span>${categoryName}</span>
+                <span>Đăng ký</span>
             </div>
         </div>
     </div>
 
-    
-
-    <!-- Category Content -->
-    <section class="category-content">
+    <!-- Register Section -->
+    <section class="login-section">
         <div class="container">
-            <div class="category-header">
-                <h1>${categoryName.toUpperCase()}</h1>
-                <div class="filter-options">
-                    <div class="sort-by">
-                        <label for="sort-select">Sắp xếp:</label>
-                        <select id="sort-select">
-                            <option value="default">Mặc định</option>
-                            <option value="price-asc">Giá tăng dần</option>
-                            <option value="price-desc">Giá giảm dần</option>
-                            <option value="name-asc">Tên A-Z</option>
-                            <option value="name-desc">Tên Z-A</option>
-                        </select>
-                    </div>
+            <div class="login-container">
+                <h2 class="form-title">Đăng ký tài khoản</h2>
+                
+                <!-- Register Form Container -->
+                <div class="login-form-container">
+                    <form class="login-form active" id="register-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Mật khẩu" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+                        <button type="submit" class="login-button">Đăng ký</button>
+                        
+                        <p class="login-info">
+                            Bạn đã có tài khoản? <a href="/Cuongsac/pages/login.html">Đăng nhập</a>
+                        </p>
+                        
+                        <p class="terms-text">
+                            This site is protected by reCAPTCHA and the Google 
+                            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and 
+                            <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
+                        </p>
+                    </form>
                 </div>
-            </div>
-
-            <div class="product-grid" id="category-products">
-                <!-- Products will be loaded from JSON -->
-                <!-- Loading state -->
-                <div class="loading-skeleton">
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                </div>
-            </div>
-
-            <!-- Pagination -->
-            <div class="pagination">
-                <button class="pagination-button active">1</button>
-                <button class="pagination-button">2</button>
-                <button class="pagination-button">3</button>
-                <button class="pagination-button next" title="Trang tiếp theo">
-                    <i class="fas fa-angle-right"></i>
-                </button>
             </div>
         </div>
     </section>
@@ -267,7 +239,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <div class="footer-dropdown">
                         <h4>Chính sách <i class="fas fa-chevron-down"></i></h4>
@@ -279,7 +251,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
                                 <li><a href="/Cuongsac/pages/information/terms-of-use.html">Điều khoản sử dụng</a></li>
                                 <li><a href="/Cuongsac/pages/information/shipping-policy.html">Chính sách vận chuyển và kiểm hàng</a></li>
                                 <li><a href="/Cuongsac/pages/information/logistics-responsibility.html">Phân định trách nhiệm của tổ chức cung ứng dịch vụ logistics</a></li>
-                            </ul>
+                            </ul>       
                         </div>
                     </div>
                 </div>
@@ -287,54 +259,16 @@ function createCategoryTemplate(categoryName, categorySlug) {
         </div>
     </footer>
 
-    <!-- Student Info Bar -->
-    <div class="student-info">
+     <!-- Student Info Bar -->
+     <div class="student-info">
         <div class="container">
             <p>Họ tên: Nguyễn Minh Nhật - MSSV: DH52201153 - Lớp: D22_TH12 - Nhóm: 26 - Ca học: Thứ 2_Ca 4</p>
         </div>
     </div>
 
-    <!-- Custom JavaScript -->
+    <!-- Custom JS -->
     <script src="/Cuongsac/assets/js/script.js"></script>
-    <script src="/Cuongsac/assets/js/category.js"></script>
+    <script src="/Cuongsac/assets/js/cart.js"></script>
     <script src="/Cuongsac/assets/js/newsletter.js"></script>
-        <script src="/Cuongsac/assets/js/cart.js"></script>
-    <script>
-        // Debug để kiểm tra lỗi ảnh
-        document.addEventListener('DOMContentLoaded', function() {
-            // Đặt danh mục hiện tại
-            currentCategory = '${categorySlug}';
-            
-            // Bắt lỗi khi ảnh không tải được
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.addEventListener('error', function() {
-                    console.error('Không thể tải ảnh:', this.src);
-                    this.src = '/Cuongsac/assets/images/logo.png'; // Ảnh thay thế
-                    this.classList.add('image-error');
-                });
-            });
-        });
-    </script>
 </body>
-</html>`;
-}
-
-// Tạo trang cho từng danh mục
-categories.forEach(category => {
-    const dirPath = path.join(__dirname, 'pages', 'categories', category.slug);
-    const filePath = path.join(dirPath, 'index.html');
-    
-    // Tạo thư mục nếu chưa tồn tại
-    if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-    }
-    
-    // Tạo file HTML
-    const content = createCategoryTemplate(category.name, category.categorySlug);
-    fs.writeFileSync(filePath, content);
-    
-    console.log(`Created category page: ${category.name} at ${filePath}`);
-});
-
-console.log('All category pages created successfully!'); 
+</html> 

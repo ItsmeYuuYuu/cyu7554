@@ -1,27 +1,10 @@
-// Tạo trang danh mục tự động
-const fs = require('fs');
-const path = require('path');
-
-// Danh sách các danh mục cần tạo và thông tin tương ứng
-const categories = [
-    { slug: 'laptop-chargers', name: 'Sạc Cho Laptop', categorySlug: 'laptop-chargers' },
-    { slug: 'budget', name: 'Sạc Giá Rẻ', categorySlug: 'budget' },
-    { slug: 'combo', name: 'Combo Sạc', categorySlug: 'combo' },
-    { slug: 'accessories', name: 'Linh Kiện Sạc', categorySlug: 'accessories' },
-    { slug: 'power-banks', name: 'Sạc Dự Phòng', categorySlug: 'power-banks' },
-    { slug: 'chargers', name: 'Củ Sạc', categorySlug: 'chargers' },
-    { slug: 'fast-charging', name: 'Sạc Nhanh', categorySlug: 'fast-charging' },
-    { slug: 'wireless', name: 'Sạc Không Dây', categorySlug: 'wireless' }
-];
-
-// Tạo template HTML cho trang danh mục
-function createCategoryTemplate(categoryName, categorySlug) {
-    return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
+<!-- Head section giống file privacy-policy.html -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${categoryName} - Cuồng Sạc</title>
+    <title>Chính sách vận chuyển và kiểm hàng - Cuồng Sạc</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +14,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/Cuongsac/assets/css/styles.css">
-    <link rel="stylesheet" href="/Cuongsac/assets/css/category.css">
+    <link rel="stylesheet" href="/Cuongsac/assets/css/information.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -41,8 +24,9 @@ function createCategoryTemplate(categoryName, categorySlug) {
         </div>
     </div>
 
-    <!-- Header -->
+    <!-- Header section giống file privacy-policy.html -->
     <header class="header">
+        <!-- Copy toàn bộ phần header từ file privacy-policy.html -->
         <div class="container">
             <!-- Mobile Nav Header -->
             <div class="mobile-nav-header">
@@ -85,7 +69,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
                     <i class="fas fa-user"></i>
                     <span>Đăng nhập</span>
                 </a>
-                <a href="/Cuongsac/pages/login.html" class="action-item">
+                <a href="/Cuongsac/pages/register.html" class="action-item">
                     <i class="fas fa-sign-in-alt"></i>
                     <span>Đăng ký</span>
                 </a>
@@ -97,7 +81,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
         </div>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation section giống file privacy-policy.html -->
     <nav class="navigation">
         <div class="container">
             <div class="nav-item dropdown">
@@ -136,12 +120,6 @@ function createCategoryTemplate(categoryName, categorySlug) {
                     <span>Tư vấn sản phẩm: 0356180093</span>
                 </a>
             </div>
-            <div class="nav-item">
-                <a href="/Cuongsac/pages/about.html" class="nav-link">
-                    <i class="fas fa-info-circle"></i>
-                    <span>THÔNG TIN TRANG WEB</span>
-                </a>
-            </div>
         </div>
     </nav>
 
@@ -151,60 +129,81 @@ function createCategoryTemplate(categoryName, categorySlug) {
             <div class="breadcrumb">
                 <a href="/Cuongsac/">Trang chủ</a>
                 <i class="fas fa-chevron-right"></i>
-                <span>${categoryName}</span>
+                <span>Chính sách vận chuyển và kiểm hàng</span>
             </div>
         </div>
     </div>
 
-    
-
-    <!-- Category Content -->
-    <section class="category-content">
+    <!-- Main Content -->
+    <main class="information-content">
         <div class="container">
-            <div class="category-header">
-                <h1>${categoryName.toUpperCase()}</h1>
-                <div class="filter-options">
-                    <div class="sort-by">
-                        <label for="sort-select">Sắp xếp:</label>
-                        <select id="sort-select">
-                            <option value="default">Mặc định</option>
-                            <option value="price-asc">Giá tăng dần</option>
-                            <option value="price-desc">Giá giảm dần</option>
-                            <option value="name-asc">Tên A-Z</option>
-                            <option value="name-desc">Tên Z-A</option>
-                        </select>
-                    </div>
-                </div>
+            <h1>Chính sách vận chuyển và kiểm hàng</h1>
+            
+            <div class="content-section">
+                <h2>1. Phạm vi vận chuyển</h2>
+                <ul>
+                    <li>Giao hàng toàn quốc</li>
+                    <li>Miễn phí vận chuyển cho đơn hàng từ 500.000đ</li>
+                    <li>Áp dụng phí vận chuyển theo khu vực</li>
+                    <li>Có thể giao hàng quốc tế (liên hệ riêng)</li>
+                </ul>
             </div>
 
-            <div class="product-grid" id="category-products">
-                <!-- Products will be loaded from JSON -->
-                <!-- Loading state -->
-                <div class="loading-skeleton">
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                    <div class="loading-card"></div>
-                </div>
+            <div class="content-section">
+                <h2>2. Thời gian vận chuyển</h2>
+                <ul>
+                    <li>Nội thành TPHCM: 1-2 ngày</li>
+                    <li>Các tỉnh miền Nam: 2-3 ngày</li>
+                    <li>Các tỉnh miền Trung: 3-4 ngày</li>
+                    <li>Các tỉnh miền Bắc: 4-5 ngày</li>
+                    <li>Vùng sâu, vùng xa: 5-7 ngày</li>
+                </ul>
             </div>
 
-            <!-- Pagination -->
-            <div class="pagination">
-                <button class="pagination-button active">1</button>
-                <button class="pagination-button">2</button>
-                <button class="pagination-button">3</button>
-                <button class="pagination-button next" title="Trang tiếp theo">
-                    <i class="fas fa-angle-right"></i>
-                </button>
+            <div class="content-section">
+                <h2>3. Phương thức vận chuyển</h2>
+                <ul>
+                    <li>Giao hàng trực tiếp (nội thành TPHCM)</li>
+                    <li>Chuyển phát nhanh</li>
+                    <li>Giao hàng tiết kiệm</li>
+                    <li>Viettel Post</li>
+                    <li>GHTK, GHN, J&T Express</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>4. Quy trình kiểm hàng</h2>
+                <ol>
+                    <li>Kiểm tra tình trạng gói hàng bên ngoài</li>
+                    <li>Mở gói hàng và kiểm tra sản phẩm</li>
+                    <li>Kiểm tra số lượng và chủng loại</li>
+                    <li>Kiểm tra chất lượng sản phẩm</li>
+                    <li>Ký xác nhận với nhân viên giao hàng</li>
+                </ol>
+            </div>
+
+            <div class="content-section">
+                <h2>5. Lưu ý khi nhận hàng</h2>
+                <ul>
+                    <li>Yêu cầu nhân viên giao hàng chờ kiểm tra</li>
+                    <li>Từ chối nhận nếu gói hàng bị rách, móp méo</li>
+                    <li>Quay video khi mở hàng (nếu cần)</li>
+                    <li>Giữ lại hóa đơn và biên nhận</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>6. Chính sách đền bù</h2>
+                <ul>
+                    <li>Hoàn tiền 100% nếu mất hàng</li>
+                    <li>Đổi mới nếu hàng bị hư hỏng trong quá trình vận chuyển</li>
+                    <li>Bồi thường theo quy định của đơn vị vận chuyển</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Newsletter Subscription -->
+    <!-- Newsletter section giống file privacy-policy.html -->
     <section class="newsletter-section">
         <div class="container">
             <div class="newsletter-content">
@@ -222,7 +221,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer section giống file privacy-policy.html -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -296,45 +295,7 @@ function createCategoryTemplate(categoryName, categorySlug) {
 
     <!-- Custom JavaScript -->
     <script src="/Cuongsac/assets/js/script.js"></script>
-    <script src="/Cuongsac/assets/js/category.js"></script>
+    <script src="/Cuongsac/assets/js/cart.js"></script>
     <script src="/Cuongsac/assets/js/newsletter.js"></script>
-        <script src="/Cuongsac/assets/js/cart.js"></script>
-    <script>
-        // Debug để kiểm tra lỗi ảnh
-        document.addEventListener('DOMContentLoaded', function() {
-            // Đặt danh mục hiện tại
-            currentCategory = '${categorySlug}';
-            
-            // Bắt lỗi khi ảnh không tải được
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.addEventListener('error', function() {
-                    console.error('Không thể tải ảnh:', this.src);
-                    this.src = '/Cuongsac/assets/images/logo.png'; // Ảnh thay thế
-                    this.classList.add('image-error');
-                });
-            });
-        });
-    </script>
 </body>
-</html>`;
-}
-
-// Tạo trang cho từng danh mục
-categories.forEach(category => {
-    const dirPath = path.join(__dirname, 'pages', 'categories', category.slug);
-    const filePath = path.join(dirPath, 'index.html');
-    
-    // Tạo thư mục nếu chưa tồn tại
-    if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-    }
-    
-    // Tạo file HTML
-    const content = createCategoryTemplate(category.name, category.categorySlug);
-    fs.writeFileSync(filePath, content);
-    
-    console.log(`Created category page: ${category.name} at ${filePath}`);
-});
-
-console.log('All category pages created successfully!'); 
+</html> 
